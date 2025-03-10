@@ -1,0 +1,26 @@
+{
+  "id": "GeneralSettings/firebase",
+  "title": "Firebase",
+  "description": "Overview",
+  "source": "@site/docs/GeneralSettings/firebase.md",
+  "sourceDirName": "GeneralSettings",
+  "slug": "/GeneralSettings/firebase",
+  "permalink": "/GeneralSettings/firebase",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "generalSidebar",
+  "previous": {
+    "title": "Deeplink",
+    "permalink": "/GeneralSettings/deeplink"
+  },
+  "next": {
+    "title": "Firebase Billing",
+    "permalink": "/GeneralSettings/firebase-billing"
+  }
+}

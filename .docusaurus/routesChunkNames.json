@@ -1,0 +1,111 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/search-822": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---search-138-688"
+    }
+  },
+  "/-2e1": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---a-74-9d6"
+    },
+    "config": "config---5-e-9-4f3"
+  },
+  "/-19d": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---aba-d70"
+    }
+  },
+  "/-147": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---22-d-307"
+  },
+  "/-007": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/category/general-settings-5c0": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---category-general-settings-101-0ea"
+  },
+  "/GeneralSettings/advertisement-a31": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-advertisementc-96-a7f"
+  },
+  "/GeneralSettings/app-deployment-3b1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-app-deployment-794-404"
+  },
+  "/GeneralSettings/deeplink-584": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-deeplink-008-8c3"
+  },
+  "/GeneralSettings/firebase-2f6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-firebase-2-c-7-22a"
+  },
+  "/GeneralSettings/firebase-billing-f90": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-firebase-billingb-29-947"
+  },
+  "/GeneralSettings/iap-a28": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-iapa-0-f-7bd"
+  },
+  "/GeneralSettings/notifications-371": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-notifications-1-a-4-3c4"
+  },
+  "/GeneralSettings/packagename-25e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-packagenamee-68-25b"
+  },
+  "/GeneralSettings/setupFlutter-cee": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---general-settings-setup-flutter-02-e-218"
+  }
+}

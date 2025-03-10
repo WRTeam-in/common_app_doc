@@ -1,0 +1,22 @@
+{
+  "id": "GeneralSettings/packagename",
+  "title": "Package Name",
+  "description": "Overview",
+  "source": "@site/docs/GeneralSettings/packagename.md",
+  "sourceDirName": "GeneralSettings",
+  "slug": "/GeneralSettings/packagename",
+  "permalink": "/GeneralSettings/packagename",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "generalSidebar",
+  "previous": {
+    "title": "Setup Flutter",
+    "permalink": "/GeneralSettings/setupFlutter"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "GeneralSettings/iap",
+  "title": "IAP",
+  "description": "Overview",
+  "source": "@site/docs/GeneralSettings/iap.md",
+  "sourceDirName": "GeneralSettings",
+  "slug": "/GeneralSettings/iap",
+  "permalink": "/GeneralSettings/iap",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "generalSidebar",
+  "previous": {
+    "title": "General Settings",
+    "permalink": "/category/general-settings"
+  },
+  "next": {
+    "title": "Advertisement",
+    "permalink": "/GeneralSettings/advertisement"
+  }
+}

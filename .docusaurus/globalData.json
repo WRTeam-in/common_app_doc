@@ -1,0 +1,78 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "GeneralSettings/iap",
+          "docs": [
+            {
+              "id": "GeneralSettings/advertisement",
+              "path": "/GeneralSettings/advertisement",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/app-deployment",
+              "path": "/GeneralSettings/app-deployment",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/deeplink",
+              "path": "/GeneralSettings/deeplink",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/firebase",
+              "path": "/GeneralSettings/firebase",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/firebase-billing",
+              "path": "/GeneralSettings/firebase-billing",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/iap",
+              "path": "/GeneralSettings/iap",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/notifications",
+              "path": "/GeneralSettings/notifications",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/packagename",
+              "path": "/GeneralSettings/packagename",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "GeneralSettings/setupFlutter",
+              "path": "/GeneralSettings/setupFlutter",
+              "sidebar": "generalSidebar"
+            },
+            {
+              "id": "/category/general-settings",
+              "path": "/category/general-settings",
+              "sidebar": "generalSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "generalSidebar": {
+              "link": {
+                "path": "/category/general-settings",
+                "label": "General Settings"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

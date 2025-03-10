@@ -1,0 +1,26 @@
+{
+  "id": "GeneralSettings/firebase-billing",
+  "title": "Firebase Billing",
+  "description": "Overview",
+  "source": "@site/docs/GeneralSettings/firebase-billing.md",
+  "sourceDirName": "GeneralSettings",
+  "slug": "/GeneralSettings/firebase-billing",
+  "permalink": "/GeneralSettings/firebase-billing",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "generalSidebar",
+  "previous": {
+    "title": "Firebase",
+    "permalink": "/GeneralSettings/firebase"
+  },
+  "next": {
+    "title": "Notifications",
+    "permalink": "/GeneralSettings/notifications"
+  }
+}
