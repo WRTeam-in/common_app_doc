@@ -18,5 +18,9 @@
   "previous": {
     "title": "Package Name Addition",
     "permalink": "/GeneralSettings/packagename"
+  },
+  "next": {
+    "title": "Assets Management",
+    "permalink": "/GeneralSettings/assets"
   }
 }

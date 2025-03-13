@@ -49,15 +49,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '39e'),
+    component: ComponentCreator('/', '636'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '11c'),
+        component: ComponentCreator('/', '1fe'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '8ca'),
+            component: ComponentCreator('/', '6f4'),
             routes: [
               {
                 path: '/category/general-settings',
@@ -80,6 +80,12 @@ export default [
               {
                 path: '/GeneralSettings/appicon',
                 component: ComponentCreator('/GeneralSettings/appicon', '2e4'),
+                exact: true,
+                sidebar: "generalSidebar"
+              },
+              {
+                path: '/GeneralSettings/assets',
+                component: ComponentCreator('/GeneralSettings/assets', '57b'),
                 exact: true,
                 sidebar: "generalSidebar"
               },
