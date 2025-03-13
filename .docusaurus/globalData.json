@@ -21,6 +21,11 @@
               "sidebar": "generalSidebar"
             },
             {
+              "id": "GeneralSettings/appicon",
+              "path": "/GeneralSettings/appicon",
+              "sidebar": "generalSidebar"
+            },
+            {
               "id": "GeneralSettings/deeplink",
               "path": "/GeneralSettings/deeplink",
               "sidebar": "generalSidebar"

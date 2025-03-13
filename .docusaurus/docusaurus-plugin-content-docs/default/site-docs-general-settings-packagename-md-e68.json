@@ -18,5 +18,9 @@
   "previous": {
     "title": "Setup Flutter",
     "permalink": "/GeneralSettings/setupFlutter"
+  },
+  "next": {
+    "title": "App Icon Setup",
+    "permalink": "/GeneralSettings/appicon"
   }
 }
