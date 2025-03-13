@@ -1,7 +1,7 @@
 {
   "id": "GeneralSettings/deeplink",
-  "title": "Deeplink",
-  "description": "Overview",
+  "title": "DeepLink Setup",
+  "description": "Setting up deep links ensures seamless navigation between your web, mobile, and panel applications. Follow these steps carefully to configure deep linking in your Flutter project.",
   "source": "@site/docs/GeneralSettings/deeplink.md",
   "sourceDirName": "GeneralSettings",
   "slug": "/GeneralSettings/deeplink",

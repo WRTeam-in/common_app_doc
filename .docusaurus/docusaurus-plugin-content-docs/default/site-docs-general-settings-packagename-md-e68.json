@@ -1,7 +1,7 @@
 {
   "id": "GeneralSettings/packagename",
-  "title": "Package Name",
-  "description": "Overview",
+  "title": "Package Name Addition",
+  "description": "📌 Importance of a Unique Package Name",
   "source": "@site/docs/GeneralSettings/packagename.md",
   "sourceDirName": "GeneralSettings",
   "slug": "/GeneralSettings/packagename",

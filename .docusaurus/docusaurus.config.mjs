@@ -19,7 +19,7 @@ export default {
     "localeConfigs": {}
   },
   "plugins": [
-    "/Users/jignesh/Documents/temp/common_app_doc/node_modules/@easyops-cn/docusaurus-search-local/dist/server/server/index.js"
+    "/Users/wrteam/Flutter/projects/common_app_doc/node_modules/@easyops-cn/docusaurus-search-local/dist/server/server/index.js"
   ],
   "presets": [
     [
