@@ -1,12 +1,10 @@
 ---
-
-## sidebar\_position: 4
+sidebar_position: 4
+---
 
 # Flutter & Java JDK Setup
 
 Setting up your development environment correctly ensures a smooth experience while building Flutter applications. Follow these steps to install Flutter, configure Java JDK, set up your IDE, and initialize your project.
-
----
 
 ## 1️⃣ Install Flutter 🛠️
 
@@ -17,7 +15,7 @@ Setting up your development environment correctly ensures a smooth experience wh
   - **macOS/Linux:** Add `export PATH="$HOME/flutter/bin:\$PATH"` to `~/.zshrc` or `~/.bashrc`.
 - Run the following command to verify installation:
   ```sh
-  flutter doctor
+  flutter doctor --verbose
   ```
 - ✅ Ensure all dependencies are installed before proceeding.
 
