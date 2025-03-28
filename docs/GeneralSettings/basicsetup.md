@@ -2,7 +2,7 @@
 
 ## sidebar\_position: 4
 
-# Flutter, Java JDK
+# Flutter & Java JDK Setup
 
 Setting up your development environment correctly ensures a smooth experience while building Flutter applications. Follow these steps to install Flutter, configure Java JDK, set up your IDE, and initialize your project.
 
