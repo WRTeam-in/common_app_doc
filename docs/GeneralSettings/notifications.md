@@ -12,7 +12,7 @@ To enable Firebase Cloud Messaging (FCM) notifications, first register your appl
 
 **iOS** : Follow these steps: 
 
-1. Open your ios folder from IDE (VS code or Android Studio) OR Runner.xcworkspace File from Finder in Xcode and select your app's target.  
+1. Open your **ios folder** from IDE (VS code or Android Studio) OR **Runner.xcworkspace File** from Finder in Xcode and select your app's target.  
 2. Enable **Push Notifications** under the **Capabilities** tab.  
 3. Enable **Remote Notifications** and **Background Fetch** under **Background Modes**.
 ![notifications](../../static/img/notifications/notifications-xcode-capabilities.png) 
@@ -23,8 +23,9 @@ APNs supports two connection methods: **Token-based (.p8)** and **Certificate-ba
 
 <details close>
 <summary>Token-based (.p8) [Preferred]</summary>
-<br>
-1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/).**
+<br> 
+
+ 1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/)**  
 
 2. **Enable Push Notifications:**
    - Navigate to **Certificates, Identifiers & Profiles > Identifiers**.
@@ -35,7 +36,7 @@ APNs supports two connection methods: **Token-based (.p8)** and **Certificate-ba
    - Generate a **Certificate Signing Request (CSR)** using Keychain Access:
      - Open **Keychain Access** from `/Applications/Utilities/`.
      - Select **Keychain Access > Certificate Assistant > Request a Certificate from a Certificate Authority**.
-     - Enter your email and a common name, choose "Saved to disk," and click **Continue**. citeturn0search0
+     - Enter your email and a common name, choose "Saved to disk" and click **Continue**.
    - In the Developer Portal, create **Development** and **Production SSL Certificates** by uploading the CSR.
    ![notifications](../../static/img/notifications/notifications-apn-2.png)
 
@@ -44,15 +45,14 @@ APNs supports two connection methods: **Token-based (.p8)** and **Certificate-ba
    - Click the add button (+) to create a new key.
    - Enable **Apple Push Notifications service (APNs)** and click **Continue**.
    - Name the key, register it, and download the **.p8** file. **Save this file securely**, as it can only be downloaded once.
-    - Key ID (found in Apple Developer Portal under "Keys")
-    - Team ID (found under Apple Developer account settings)
+        - Key ID (found in Apple Developer Portal under "Keys")
+        - Team ID (found under Apple Developer account settings)
     ![notifications](../../static/img/notifications/notifications-apn-3.png)
     ![notifications](../../static/img/notifications/notifications-apn-4.png)
 
 5. **Configure Firebase:**
    - In the [Firebase Console](https://console.firebase.google.com/), navigate to your project settings.
    - Under the **Cloud Messaging** tab, upload the **.p8** file and enter the **Key ID** and **Team ID**.
-   -
     ![notifications](../../static/img/notifications/notifications-firebase-p8.png)
 
 By following these steps, you'll successfully set up Push Notifications for your iOS app. 
@@ -60,9 +60,8 @@ By following these steps, you'll successfully set up Push Notifications for your
 <details close>
 <summary>Certificate-based (.p12)</summary>
 <br>
- ### Enable Push Notifications for iOS  
 
-1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/).**  
+1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/)** 
 2. **Enable Push Notifications:**  
    - Go to **Certificates, IDs & Profiles > Identifiers** and select your App ID.  
    - Enable **Push Notifications** under **Capabilities** and save.  
@@ -77,8 +76,8 @@ By following these steps, you'll successfully set up Push Notifications for your
    - Navigate to **Provisioning Profiles**, select the profile, edit if needed, and download it.  
    - Double-click to install it in Xcode.  
 6. **Upload to Firebase:**  
-   - Use the **.p12 file** in [Firebase Console](https://console.firebase.google.com/) under Cloud Messaging settings.  
-    ![notifications](../../static/img/notifications/notifications-firebase-p12.png)
+   - Use the **.p12 file** in [Firebase Console](https://console.firebase.google.com/) under Cloud Messaging settings.
+   ![notifications](../../static/img/notifications/notifications-firebase-p12.png)
 
  </details>
 <br>
