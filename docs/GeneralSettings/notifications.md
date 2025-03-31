@@ -6,7 +6,7 @@ sidebar_position: 7
 
 This guide walks you through the steps to Integrate Firebase Cloud Messaging  for your flutter Project. 
 
-To enable Firebase Cloud Messaging (FCM) notifications, first register your application with Firebase. If you haven’t already created a Firebase project, set one up. If a project already exists, you can skip this step.  
+To enable Firebase Cloud Messaging (FCM) notifications, first register your application with Firebase. If you haven't already created a Firebase project, set one up. If a project already exists, you can skip this step.  
 
 **Android** : All necessary dependencies, service classes, and configurations are already included in the project, so no additional coding is required. Simply download the **`google-services.json`** file and place it in your Flutter project at 📂 **`android/app/`** (replace the existing file if needed)
 
@@ -21,9 +21,8 @@ An **Apple Developer Account** is required to generate Apple Push Notifications 
 
 APNs supports two connection methods: **Token-based (.p8)** and **Certificate-based (.p12)**. You can use either based on your requirements.
 
-<details close>
+<details>
 <summary>Token-based (.p8) [Preferred]</summary>
-<br> 
 
  1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/)**  
 
@@ -57,16 +56,15 @@ APNs supports two connection methods: **Token-based (.p8)** and **Certificate-ba
 
 By following these steps, you'll successfully set up Push Notifications for your iOS app. 
 </details>
-<details close>
+<details>
 <summary>Certificate-based (.p12)</summary>
-<br>
 
 1. **Log in to the [Apple Developer Portal](https://developer.apple.com/account/)** 
 2. **Enable Push Notifications:**  
    - Go to **Certificates, IDs & Profiles > Identifiers** and select your App ID.  
    - Enable **Push Notifications** under **Capabilities** and save.  
 3. **Create an APNs Certificate:**  
-   - Follow Apple’s guide to [create a Certificate Signing Request (CSR)](https://developer.apple.com/help/account/certificates/create-a-certificate-signing-request/).  
+   - Follow Apple's guide to [create a Certificate Signing Request (CSR)](https://developer.apple.com/help/account/certificates/create-a-certificate-signing-request/).  
    - In the Developer Portal, go to **Push Notifications > Configure** and create a **Development** or **Production SSL Certificate**.  
    - Upload the CSR, generate the certificate, and **download** it.  
 4. **Export to .p12:**  
@@ -80,10 +78,8 @@ By following these steps, you'll successfully set up Push Notifications for your
    ![notifications](../../static/img/notifications/notifications-firebase-p12.png)
 
  </details>
-<br>
+<br></br>
 
-
-
-4. Replace the existing **`GoogleService-Info.plist`** with the latest one, or add it to your Flutter project at 📂 **`ios/Runner/`**
+4. Replace the existing **`GoogleService-Info.plist`** with the latest one, or add it to your Flutter project at �� **`ios/Runner/`**
 
 Now, your app is set up to receive push notifications! 🚀
