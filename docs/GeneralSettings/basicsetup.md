@@ -14,6 +14,7 @@ Setting up your development environment correctly ensures a smooth experience wh
   - **Windows:** Add `C:\flutter\bin` to `System Environment Variables`.
   - **macOS/Linux:** Add `export PATH="$HOME/flutter/bin:\$PATH"` to `~/.zshrc` or `~/.bashrc`.
 - Run the following command to verify installation:
+  
   ```sh
   flutter doctor --verbose
   ```
@@ -26,15 +27,18 @@ Setting up your development environment correctly ensures a smooth experience wh
 - Download the latest **Java Development Kit (JDK)** from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html) or [OpenJDK](https://openjdk.org/).
 - Install the JDK and note the installation path.
 - Set up environment variables:
+  
   - **Windows:**
     - Add `JAVA_HOME` as the JDK installation path in system variables.
     - Add `%JAVA_HOME%\bin` to the `Path` variable.
   - **macOS/Linux:**
+    
     ```sh
     export JAVA_HOME=$(/usr/libexec/java_home)
     export PATH=$JAVA_HOME/bin:$PATH
     ```
 - Verify installation:
+
   ```sh
   java -version
   ```
@@ -62,15 +66,8 @@ To develop Flutter applications efficiently, install an appropriate IDE:
 
 ## 4️⃣ Basic Flutter Project Setup 📂
 
-- Create a new Flutter project:
-  ```sh
-  flutter create my_app
-  ```
-- Navigate into the project folder:
-  ```sh
-  cd my_app
-  ```
 - Run the project on an emulator or connected device:
+  
   ```sh
   flutter run
   ```
@@ -83,6 +80,7 @@ To develop Flutter applications efficiently, install an appropriate IDE:
 ✅ **Final Check:**
 
 - Ensure Flutter, Java, and IDE are correctly installed by running:
+  
   ```sh
   flutter doctor
   ```
