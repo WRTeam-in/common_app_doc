@@ -22,7 +22,7 @@ Before creating a Firebase app from Flutter, you must install **Firebase CLI.**
 ### 🏗️ Step 2: Create a Firebase Project
 1️⃣ Open **Firebase Console** and click **Create a Project**.  
 
-  ![firebase](../../static/img/firebase/firebase1.png)  
+  ![firebase](../../static/img/firebase/firebase1.png)
 
 2️⃣ Enter your **project name** and press **Continue**.  
 
@@ -32,13 +32,8 @@ Before creating a Firebase app from Flutter, you must install **Firebase CLI.**
 
   ![firebase](../../static/img/firebase/firebase3.png)  
 
-4️⃣ Click **Create Project** and wait for the setup to complete. 
-
-  ![firebase](../../static/img/firebase/firebase4.png)  
-
+4️⃣ Click **Create Project** and wait for the setup to complete.  
 5️⃣ Once done, press **Continue**.  
-
-  ![firebase](../../static/img/firebase/firebase5.png)  
 
 ---
 
@@ -218,7 +213,7 @@ Replace the placeholders ("[]" brackets) with the actual details you used.
 
 --- 
 
-### 🍎 For iOS Authentication Setup  
+### 🍎 For iOS Authentication Setup
 
 1️⃣ Open Xcode > Open Your Project's **ios** folder  
 2️⃣ Go to Signing & Capabilities tab  
