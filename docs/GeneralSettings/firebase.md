@@ -37,6 +37,38 @@ Before creating a Firebase app from Flutter, you must install **Firebase CLI.**
 
 ---
 
+## 🔥 Firebase Authentication  
+
+This document provides step-by-step instructions to enable **Firebase Authentication** in your Flutter app.  
+
+---
+
+## 🔑 Enable Firebase Authentication  
+1️⃣ **Open Firebase Console** 
+ - Go to [Firebase Console](https://console.firebase.google.com/)
+ - Select your project  
+
+2️⃣ **Enable Authentication Methods**
+ - Go to **Authentication** > **Sign-in method**
+ - Click **Add New Provider**
+ - Enable the required sign-in methods (e.g., Apple, Phone, Google)  
+
+   ![firebase](../../static/img/firebase/firebase15.png)  
+
+:::note
+To enable mobile authentication, please upgrade your Firebase plan from Spark to Blaze.
+:::
+     
+3️⃣ **Enable SMS Authentication for specific regions**  
+ - Go to **Authentication** > **Settings**  
+ - Go to **SMS region policy** in SMS section  
+ - Click on **allow**  
+ - Add the regions where you want to enable SMS authentication for OTP log-in.  
+
+   ![firebase](../../static/img/firebase/firebase20.png)  
+
+---   
+
 ### 📱 Step 3: Create a Firebase App for Flutter  
 1️⃣ Select **Flutter** as the app type (refer to the image below).  
 
@@ -58,7 +90,7 @@ firebase login
   ![fierbase](../../static/img/firebase/firebase8.png)  
 
 3️⃣ A browser window will open—log in to your Firebase account.  
-4️⃣ When prompted, allow Firebase to collect CLI usage data by entering `YES` and pressing Enter.
+4️⃣ When prompted, allow Firebase to collect CLI usage data by entering `YES` and pressing Enter.  
 
 ---
 
@@ -89,35 +121,7 @@ firebase login
 2️⃣ Click **Continue to Console**.  
 
   ![firebase](../../static/img/firebase/firebase14.png)  
-  
-
-## 🔥 Firebase Authentication  
-
-This document provides step-by-step instructions to enable **Firebase Authentication** in your Flutter app.  
-
----
-
-## 🔑 Enable Firebase Authentication  
-1️⃣ **Open Firebase Console** 
- - Go to [Firebase Console](https://console.firebase.google.com/)
- - Select your project  
-
-2️⃣ **Enable Authentication Methods**
- - Go to **Authentication** > **Sign-in method**
- - Click **Add New Provider**
- - Enable the required sign-in methods (e.g., Apple, Phone, Google)  
-
-   ![firebase](../../static/img/firebase/firebase15.png)  
-
-
-3️⃣ **Enable SMS Authentication for specific regions**  
- - Go to **Authentication** > **Settings**  
- - Go to **SMS region policy** in SMS section  
- - Click on **allow**  
- - Add the regions where you want to enable SMS authentication for OTP log-in.  
-
-   ![firebase](../../static/img/firebase/firebase20.png)  
-     
+         
 ---
 
 ## 🔒 Add SHA1 & SHA256 Keys in Firebase  
