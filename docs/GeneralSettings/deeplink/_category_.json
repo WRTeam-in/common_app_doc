@@ -1,0 +1,8 @@
+{
+  "label": "DeepLinkSetup",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "GeneralSettings/deeplink/index"
+  }
+}
