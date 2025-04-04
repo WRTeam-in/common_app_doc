@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# DeepLink Setup
+# Deep Link Setup
 
-# 📌 DeepLink Setup 🚀
+# 📌 Deep Link Setup 🚀
 
 Setting up deep links ensures seamless navigation between your web, mobile, and panel applications. Follow these steps carefully to configure deep linking in your Flutter project.
 
