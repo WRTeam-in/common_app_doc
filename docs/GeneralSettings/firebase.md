@@ -207,6 +207,10 @@ Replace the placeholders ("[]" brackets) with the actual details you used.
 
 ---
 
+ :::note
+ Please do not forget to add the following keys to the Firebase Console. Without these, **authentication** will not be allowed for your app when it's in production.
+ :::
+ 
 #### 🔸 For App Signing
 
 8️⃣ After Create the app on the Google Play Console, Go to **View app->**  
