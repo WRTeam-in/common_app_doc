@@ -11,17 +11,17 @@ This guide walks you through integrating Unity Ads into your Flutter app.
 Go to the [Unity Ads dashboard](https://id.unity.com/en/account/) and log in or create an account.
 Navigate to the dashboard.
 
-![Unity Ads Dashboard](/img/advertisement/Unityads1.png)
+![Unity Ads Dashboard](../../../static/img/advertisement/Unityads1.png)
 
 Create a new project and fill in the required details. If you already have a project, skip to Step 2.
 
-![Create Unity Project](/img/advertisement/Unityads2.png)
-![Project Form](/img/advertisement/Unityads3.png)
+![Create Unity Project](../../../static/img/advertisement/Unityads2.png)
+![Project Form](../../../static/img/advertisement/Unityads3.png)
 
 Open your project, scroll down, and locate **Unity Ads Monetization**.
 
-![Unity Ads Monetization](/img/advertisement/Unityads4.png)
-![Enable Ads](/img/advertisement/Unityads5.png)
+![Unity Ads Monetization](../../../static/img/advertisement/Unityads4.png)
+![Enable Ads](../../../static/img/advertisement/Unityads5.png)
 
 Choose one of the monetization options:
 
@@ -32,11 +32,11 @@ Choose one of the monetization options:
 Using mediation may require additional setup. Read more about it [here](https://docs.unity.com/ads/en-us/manual/ImplementingUnityAdsInMediation).
 :::
 
-![Mediation Ads](/img/advertisement/Unityads6.png)
+![Mediation Ads](../../../static/img/advertisement/Unityads6.png)
 
 If you have an existing Unity project and want to copy its ad settings, select **Yes**. Otherwise, choose **No**.
 
-![Copy Ad Settings](/img/advertisement/Unityads7.png)
+![Copy Ad Settings](../../../static/img/advertisement/Unityads7.png)
 
 Select **"My app is not live yet"** and click **Add Project**.
 
@@ -44,7 +44,7 @@ Select **"My app is not live yet"** and click **Add Project**.
 You can add store IDs later when the app goes live.
 :::
 
-![Connecting Apps with Unity SDK](/img/advertisement/Unityads8.png)
+![Connecting Apps with Unity SDK](../../../static/img/advertisement/Unityads8.png)
 
 Unity Ads is now ready for integration.
 
@@ -52,11 +52,11 @@ Unity Ads is now ready for integration.
 
 Go to your admin panel: *System Settings > App Settings > Unity Ads*.
 
-![Admin Panel](/img/advertisement/Unityads9.png)
+![Admin Panel](../../../static/img/advertisement/Unityads9.png)
 
 Add the required Unity Ad IDs in the admin panel and click **Submit**.
 
-![Unity Ad IDs](/img/advertisement/Unityads10.png)
+![Unity Ad IDs](../../../static/img/advertisement/Unityads10.png)
 
 Your app will now display Unity Ads.
 
@@ -64,7 +64,7 @@ Your app will now display Unity Ads.
 
 In your Unity project, go to the **Testing** section and override the default settings to force test mode. This ensures test ads are displayed to all users.
 
-![Testing Ads](/img/advertisement/Unityads11.png)
+![Testing Ads](../../../static/img/advertisement/Unityads11.png)
 
 To enable test ads for a specific device:
 
@@ -73,6 +73,6 @@ To enable test ads for a specific device:
   - Android: Settings > Google > Ads
   - iOS: Advertising IDs are not publicly visible. Use a [third-party app](https://apps.apple.com/in/app/my-device-id-by-appsflyer/id1192323960) to find your iOS advertising ID
 
-![Testing on Specific Device](/img/advertisement/Unityads12.png)
+![Testing on Specific Device](../../../static/img/advertisement/Unityads12.png)
 
 **Remember to turn off test mode before deploying your app.** 
