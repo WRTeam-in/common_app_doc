@@ -19,25 +19,13 @@ Assets in Flutter include images, animations, and other resource files used with
   - Replace all variants **or**  
   - Delete them and use a single image file instead.
 
-### 2️⃣ Animations (Lottie, JSON)
+### 2️⃣ Animations (Lottie, Rive, etc.)
 
-- If the app uses **Lottie animations**, you can modify them by:
-  - Changing colors or elements inside the animation tool.
-  - Saving the file with the **same name** to avoid modifying the code.
-- To add a **new Lottie animation**, replace an existing file with your new `.json` file.
-- **Custom folders:** If adding new folders inside `assets/`, ensure they are registered in `pubspec.yaml`.
-
-### 🔍 Registering Assets in `pubspec.yaml`
-
-If you add new asset files or directories, include them in `pubspec.yaml`:
-
-```yaml
-flutter:
-  assets:
-    - assets/images/
-    - assets/animations/
-```
-
-![assets](../../static/img/assets/assets1.png)
+- Flutter supports multiple animation formats like **Lottie (`.json`)**, **Rive (`.riv`)**, and others.
+- You can replace an existing animation file using the **same filename** to avoid modifying code.
+- If you replace our animation files with a different file, you'll have to find the usage of that file and change the widget accordingly.
+- Editors for common formats:
+  - **Lottie Editor:** [https://lottiefiles.com/editor](https://lottiefiles.com/editor)
+  - **Rive Editor:** [https://rive.app/](https://rive.app/)
 
 ✅ **Final Check:** Always confirm that new or updated assets are correctly referenced in the code to avoid missing asset errors.

@@ -75,3 +75,63 @@ dart run flutter_launcher_icons
 🔹 **Tip:** Delete any existing icons with different shapes to prevent conflicts.
 
 ✅ After running this command, your app will have updated icons across Android and iOS!
+
+---
+
+## 🛠️ Manual Method (Optional)
+
+If you prefer not to use the package, you can manually replace icon files in the platform-specific directories.
+
+> 💡 You can use various free tools available online to generate all the required size-specific icon files from a single logo image, which you can then replace directly in the respective folders.
+
+![appicon](../../static/img/appicon/appicon2.png)
+
+### 📱 Android
+
+1. Prepare icon assets in required resolutions (typically: 48x48, 72x72, 96x96, 144x144, 192x192, etc.).
+2. Replace the default icons in the following directory:
+
+```
+android/app/src/main/res/
+```
+
+Replace files in these subdirectories:
+
+- `mipmap-mdpi/ic_launcher.png`
+- `mipmap-hdpi/ic_launcher.png`
+- `mipmap-xhdpi/ic_launcher.png`
+- `mipmap-xxhdpi/ic_launcher.png`
+- `mipmap-xxxhdpi/ic_launcher.png`
+
+For adaptive icons (if applicable), replace:
+
+- `mipmap-anydpi-v26/ic_launcher.xml`
+- `mipmap-anydpi-v26/ic_launcher_round.xml`
+
+Also update or create foreground/background layers if needed:
+
+```
+res/drawable/ic_launcher_foreground.xml
+res/drawable/ic_launcher_background.xml
+```
+
+### 🍏 iOS
+
+1. Prepare a set of iOS app icons using [Apple’s required sizes](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/).
+2. Replace existing icons inside:
+
+```
+ios/Runner/Assets.xcassets/AppIcon.appiconset/
+```
+
+Replace all `.png` files with correct sizes and update `Contents.json` if necessary (or regenerate with Xcode's asset tool).
+
+✅ After replacing manually, clean and rebuild your project to apply changes:
+
+```sh
+flutter clean
+flutter pub get
+flutter run
+```
+
+---

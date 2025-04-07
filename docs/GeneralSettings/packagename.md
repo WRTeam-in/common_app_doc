@@ -26,6 +26,12 @@ com.<yourcompany>.<yourapp>
 - Use only **lowercase letters** and **dots (`.`) as separators**.
 - Avoid **special characters, spaces, or uppercase letters**.
 - Ensure it matches across **Android**, **iOS**, and **Firebase** for consistency.
+- 🔸 **Special Case for Kotlin Reserved Keywords:**  
+  If your package name includes Kotlin reserved keywords like `in`, `is`, `as`, etc., you must wrap them in backticks when declaring the package in Kotlin source files.  
+  **Example:**
+  ```kotlin
+  package `in`.co.mydomain.myapp
+  ```
 
 ## 🔄 How to Change the Package Name
 
@@ -37,7 +43,9 @@ You can manually search and replace the package name across your project files:
 - `build.gradle`
 - `Info.plist`
 - `ios/Runner.xcodeproj/project.pbxproj`
-- Rename the package structure inside `android/app/src/main/java/com/yourpackage/`
+- Rename the package structure inside:
+  - `android/app/src/main/java/com/yourpackage/` *(for Java-based projects)*
+  - `android/app/src/main/kotlin/com/yourpackage/` *(for Kotlin-based projects)*
 - Any other occurrences in your Flutter project.
 
 ### Automated Method
