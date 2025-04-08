@@ -4,12 +4,11 @@ sidebar_position: 3
 
 # App Deployment
 
-[//]: # (Header image showing Play Store and Flutter logos side by side)
-![App Deployment Header](../../static/img/appDeployment/header.png)
+![App Deployment](../../static/img/appDeployment/header.png)
 
 ## Overview
 
-This guide provides a comprehensive walkthrough for deploying your Flutter app to the Google Play Store. We'll cover everything from account setup to app submission, making it easy for non-technical users to follow.
+This guide provides a comprehensive walkthrough for deploying your Flutter app to the Google Play Store and App Store. We'll cover everything from account setup to app submission, making it easy for non-technical users to follow.
 
 ## Prerequisites
 
