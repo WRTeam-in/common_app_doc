@@ -1,12 +1,18 @@
 ---
+title: Firebase Billing
+description: Enable Firebase Billing for OTP Login, Maps and Places API
 sidebar_position: 6
 ---
 
-# Firebase Billing
+# Enable Firebase Billing
+
+
+## 🔼 Overview
+Firebase provides a range of services, some of which require billing to be enabled, especially OTP login, Google Maps, and Places API. Follow these steps to ensure proper billing setup.
 
 ## 🔼 Upgrade from the Firebase Spark Plan to the Blaze Plan
 :::note
-(regarding Firebase OTP setup — if you’ve already set up billing for Firebase OTP previously, there’s no need to repeat that step. Please ensure that your billing account is linked to your app project. If it isn’t, kindly follow these steps(1 to 3 point))
+Regarding Firebase OTP setup — if you've already set up billing for Firebase OTP previously, there's no need to repeat that step. Please ensure that your billing account is linked to your app project. If it isn't, kindly follow these steps (1 to 3 points).
 :::
 
 1. Log in to the Firebase Console. In the lower left, you will see that your project is listed on the Spark plan. Click the upgrade button.
@@ -22,28 +28,27 @@ sidebar_position: 6
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling3.png)
     - Select your country instead of India.
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling4.png)
-    - Select your existing payment profile, or click **'Create New Payment Profile'** if you don’t have one.
+    - Select your existing payment profile, or click **'Create New Payment Profile'** if you don't have one.
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling5.png)
-    - Add detail of paymnet account.
+    - Add details of payment account.
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling6.png)
-    - Select your existing payment method, or click 'Add Payment Method' if you don’t have one.
+    - Select your existing payment method, or click 'Add Payment Method' if you don't have one.
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling7.png)
     - Select your payment method.
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling8.png)
 
-## Setting Up Billing on Map, and Place API Keys
-Firebase provides a range of services, some of which require billing to be enabled, especially Google Maps, and Places API. Follow these steps to ensure proper billing setup.
+## Setting Up Billing on Map and Place API Keys
 
 ## 1️⃣ Set Up Billing
 :::note
-(regarding Firebase OTP and Maps setup — if you’ve already set up billing for Firebase OTP previously, there’s no need to repeat that step. Please ensure that your billing account is linked to your app project. If it isn’t, kindly follow these steps(1 to 6 point))
+Regarding Firebase OTP and Maps setup — if you've already set up billing for Firebase OTP previously, there's no need to repeat that step. Please ensure that your billing account is linked to your app project. If it isn't, kindly follow these steps (1 to 6 points).
 :::
 
 1. Go to the Firebase Console.
 2. Select your project.
 3. In the left-hand menu, click on **Project Settings**.
 4. Under the **Billing** section, click **Go to Billing Account**.
-5. If you don’t have a billing account, **click Create Billing Account** and follow the prompts to add your payment method.
+5. If you don't have a billing account, **click Create Billing Account** and follow the prompts to add your payment method.
 6. Link the billing account to your project.
 
 ## 2️⃣ Enable Required APIs
@@ -51,17 +56,20 @@ Firebase provides a range of services, some of which require billing to be enabl
 2. Click on **Google Cloud Console**, then select your project.
 3. In the Cloud Console, navigate to **APIs & Services > Library**.
 4. Enable the following APIs:
-    - **Maps SDK for Android** (to display maps on Android devices)
+    - **Maps SDK for Android** to display maps on Android devices
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling9.png)
-    - **Maps SDK for iOS** (to display maps on iOS devices)
+    - **Maps SDK for iOS** to display maps on iOS devices
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling10.png)
-    - **Geocoding API** (optional, for converting addresses into coordinates)
+    - **Geocoding API** for converting addresses into coordinates **(optional)**
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling11.png)
-    - **Places API** (for location search and autocomplete)
+    - **Places API** for location search and autocomplete
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling12.png)
-    - **Routes API(Distance Matrix API is now deprecated, so it's necessary to enable the Routes API.)** (for calculated distance between location)
+    - **Routes API** for calculating distance between locations   
+    :::warning
+    Distance Matrix API is now deprecated, so it's necessary to enable the Routes API.
+    :::
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling13.png)
-    - **Maps JavaScript API** (for displaying maps)
+    - **Maps JavaScript API** for displaying maps
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling14.png)
 
 ## 3️⃣ Set Up API Keys
@@ -71,7 +79,7 @@ Firebase provides a range of services, some of which require billing to be enabl
 ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling18.png)
 
     ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling19.png)
-3. API Key Management for **Android**, **iOS**, and **Place Services**(remove Restrictions from android, ios and place search api new create), Please Ignore if Already **Unrestricted**.
+3. API Key Management for **Android**, **iOS**, and **Place Services** (remove Restrictions from Android, iOS and Place Search API newly created), Please Ignore if Already **Unrestricted**.
 ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling20.png)
 
 ## 4️⃣ Add the API Key to Your App
