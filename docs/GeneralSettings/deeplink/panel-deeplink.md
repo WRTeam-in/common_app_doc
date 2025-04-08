@@ -9,7 +9,7 @@ sidebar_position: 1
  Navigate to `System Setting > General Setting > Deep Link Settings` to add scheme for deep linking.
   - Save the changes.
 
-    ![deeplink](../../../static/img/deeplink/deeplink4.png)
+    ![deeplink](../../../static/img/deeplink/deeplink4.webp)
 
 :::note
     Please add your scheme here using a single word in lowercase (e.g., edemand), 
@@ -25,7 +25,7 @@ sidebar_position: 1
 - Add the correct Play Store and App Store links for your app.
 - Save the changes.
 
-    ![deeplink](../../../static/img/deeplink/deeplink5.png)
+    ![deeplink](../../../static/img/deeplink/deeplink5.webp)
     
 - 🔗 **Why?** These links enable users to be redirected correctly when opening the app from external sources.
 

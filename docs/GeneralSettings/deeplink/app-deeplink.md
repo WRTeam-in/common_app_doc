@@ -15,11 +15,11 @@ Setting up deep links ensures seamless navigation between your web, mobile, and 
 - Update the necessary files:
   - `lib/utils/constant.dart`
 
-    ![deeplink](../../../static/img/deeplink/deeplink1.png)
+    ![deeplink](../../../static/img/deeplink/deeplink1.webp)
 
   - `android/app/src/main/AndroidManifest.xml`
 
-    ![deeplink](../../../static/img/deeplink/deeplink2.png)
+    ![deeplink](../../../static/img/deeplink/deeplink2.webp)
 
 - 🔍 **Ensure correctness:** The domain should match across all configurations.
 
@@ -29,11 +29,11 @@ Setting up deep links ensures seamless navigation between your web, mobile, and 
 - Modify the required files:
   - `android/app/src/main/AndroidManifest.xml`
 
-    ![deeplink](../../../static/img/deeplink/deeplink2.png)
+    ![deeplink](../../../static/img/deeplink/deeplink2.webp)
 
   - `ios/Runner/Info.plist`
 
-    ![deeplink](../../../static/img/deeplink/deeplink3.png)
+    ![deeplink](../../../static/img/deeplink/deeplink3.webp)
 
 :::note
     Please add your scheme here using a single word in lowercase (e.g., edemand), 
