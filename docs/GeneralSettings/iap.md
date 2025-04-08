@@ -1,14 +1,20 @@
 ---
 sidebar_position: 1
+description: A guide to setting up In-App Purchases for App Store and Play Console
+tags:
+  - iap
+  - In-App Purchase
+  - Play Console
+  - App Store
 ---
 # IAP (In App Purchase)
 
 ## Overview
 
-This guide walks you through the steps to create and setup IAP for App store and Play Console, for 2 types of IAP:
+This guide walks you through the steps to create and setup IAP for App Store and Play Console, for 2 types of IAP:
 
 - **_Consumables_** are depleted after one use. Customers can purchase them multiple times.
-- **_Non-consumables_** are a type that customers purchase once. They don’t expire.
+- **_Non-consumables_** are a type that customers purchase once. They don't expire.
 
 First we will start with App Store.
 
@@ -84,7 +90,7 @@ After that go to **App Submission** page and scroll down to **In-App Purchases a
 </div>
 And click **Edit**, then select the IAP you just created. Click **Done**.
 
-That's it! 🎊 You have successfully created IAP in App Store Connect. You check and test the IAP with testflight, and make sure it works as expected. then submit the app for review.
+That's it! 🎊 You have successfully created IAP in App Store Connect. You can check and test the IAP with TestFlight, and make sure it works as expected. Then submit the app for review.
 
 ## Google Play Console
 
@@ -115,12 +121,12 @@ To create an in-app product, do the following steps:
 
 5. Save your changes and click **Activate** to make your in-app product available to users.
 
-for IAP to show up in your app, you will need to publish the app once in open/close or production.
+for IAP to show up in your app, you will need to publish the app once in open/closed testing or production.
 
 That's it! 🎊 You have successfully created IAP in Google Play Console.
 
 ### Test Purchase IAP
-To test purchase IAP during developent phase, you can leverage the **licensed testers** feature in Google Play Console.
+To test purchase IAP during development phase, you can leverage the **licensed testers** feature in Google Play Console.
 
 You can set up a list of Gmail accounts to test your in-app billing and subscription integration. Your own publishing account is always considered a licensed tester.
 
