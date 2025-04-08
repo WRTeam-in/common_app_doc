@@ -12,10 +12,14 @@ Firebase provides a range of services, some of which require billing to be enabl
 
 ## 🔼 Upgrade from the Firebase Spark Plan to the Blaze Plan
 :::note
-Regarding Firebase OTP setup — if you've already set up billing for Firebase OTP previously, there's no need to repeat that step. Please ensure that your billing account is linked to your app project. If it isn't, kindly follow these steps (1 to 3 points).
+Regarding Firebase OTP setup — if you've already set up Blaze plan for Firebase OTP previously, there's no need to repeat steps 1 to 3. <br />Please also ensure that your billing account is linked to your app project. If it isn't, kindly follow these steps (1 to 3 points).
 :::
 
-1. Log in to the Firebase Console. In the lower left, you will see that your project is listed on the Spark plan. Click the upgrade button.
+1. Log in to the [Firebase Console](https://console.firebase.google.com/u/0/). 
+    - Open your project in the Firebase Console.
+    - In the bottom left, you will see that your project is listed on the Spark plan. Click the upgrade button.
+    - Click the upgrade button.
+
 ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling1.png)
 
 2. Select the Blaze plan.
