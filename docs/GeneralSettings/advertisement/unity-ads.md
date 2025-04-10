@@ -50,21 +50,19 @@ Unity Ads is now ready for integration.
 
 ## 2. Integrating Unity Ads
 
-Go to your admin panel: *System Settings > App Settings > Unity Ads*.
-
-![Admin Panel](../../../static/img/advertisement/Unityads9.png)
+In your admin panel, navigate to the Settings, then locate the Unity Ads configuration options.
 
 Add the required Unity Ad IDs in the admin panel and click **Submit**.
 
-![Unity Ad IDs](../../../static/img/advertisement/Unityads10.png)
+![Unity Ad IDs](../../../static/img/advertisement/Unityads9.png)
 
-Your app will now display Unity Ads.
+🎉 That’s it! Your app is now ready to display Unity Ads — time to start monetizing!
 
 ## 3. Enabling Test Mode
 
 In your Unity project, go to the **Testing** section and override the default settings to force test mode. This ensures test ads are displayed to all users.
 
-![Testing Ads](../../../static/img/advertisement/Unityads11.png)
+![Testing Ads](../../../static/img/advertisement/Unityads10.png)
 
 To enable test ads for a specific device:
 
@@ -73,6 +71,6 @@ To enable test ads for a specific device:
   - Android: Settings > Google > Ads
   - iOS: Advertising IDs are not publicly visible. Use a [third-party app](https://apps.apple.com/in/app/my-device-id-by-appsflyer/id1192323960) to find your iOS advertising ID
 
-![Testing on Specific Device](../../../static/img/advertisement/Unityads12.png)
+![Testing on Specific Device](../../../static/img/advertisement/Unityads11.png)
 
 **Remember to turn off test mode before deploying your app.** 
