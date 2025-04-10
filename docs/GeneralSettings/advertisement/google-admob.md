@@ -19,7 +19,6 @@ Before you can use AdMob in your application, you need to create a Google Ads ac
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nIBvbUTSJa8?si=M01V_kFb9BBjWqPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For more detailed instructions, watch the [video tutorial on YouTube](https://youtu.be/nIBvbUTSJa8?si=M01V_kFb9BBjWqPa).
 
 ## 2. Adding Your App to Google AdMob
 
@@ -208,6 +207,7 @@ After creating all necessary ad units, you need to configure them in your app's 
    - Banner Ad Unit ID
    - Interstitial Ad Unit ID
    - Rewarded Ad Unit ID
+   - Native Ad Unit ID
 4. Save the changes
 
 ## 7. Troubleshooting Common Issues
