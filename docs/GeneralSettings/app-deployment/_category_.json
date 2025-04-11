@@ -1,0 +1,8 @@
+{
+  "label": "App Deployment",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "GeneralSettings/deployment/index"
+  }
+}
