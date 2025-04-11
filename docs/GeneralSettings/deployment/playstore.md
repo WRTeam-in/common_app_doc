@@ -115,6 +115,12 @@ storeFile=<path to your keystore file>
 ![Create key.properties File](../../../static/img/appDeployment/createKeyProperties.png)
 
 Update `android/app/build.gradle`:
+
+1. Open your `build.gradle` file.
+2. Look for the required code blocks:
+   - ✅ **If present**: No changes needed.
+   - ❌ **If missing**: Add the required code blocks manually.
+
 ```gradle
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('key.properties')
@@ -125,6 +131,29 @@ if (keystorePropertiesFile.exists()) {
 
 ![change build.gradle file](../../../static/img/appDeployment/buildGradle.png)
 
+
+```gradle
+signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+```
+
+![change build.gradle file](../../../static/img/appDeployment/buildGradle1.png)
+
+
+```gradle
+signingConfig signingConfigs.release
+```
+
+![change build.gradle file](../../../static/img/appDeployment/buildGradle1.png)
+
+3. Save the file.
+4. Sync your project to apply the changes.
 
 ### 5. Build Your App
 
