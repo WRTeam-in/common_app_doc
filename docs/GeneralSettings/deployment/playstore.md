@@ -32,7 +32,7 @@ Before starting the deployment process, ensure you have:
 
 1. Visit [Google Play Console](https://play.google.com/console)
 2. Choose your account type:
-   - Individual developer (requires additional testing requirements)
+   - Individual developer (additional testing requirements)
    - Organization (requires D-U-N-S Number)
 3. Complete registration:
    - Pay $25 registration fee
