@@ -20,26 +20,26 @@ Regarding Firebase OTP setup — if you've already set up Blaze plan for Firebas
     - In the bottom left, you will see that your project is listed on the Spark plan. Click the upgrade button.
     - Click the upgrade button.
 
-![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling1.png)
+![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling1.webp)
 
 2. Select the Blaze plan.
-![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling2.png)
+![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling2.webp)
 
 3. Select a billing account. Then click Continue and Purchase. You are now on the Blaze plan.
     - For details on how to create a billing account, please see the Google Billing instructions:
     🔗[click here](https://docs.firerun.io/getting-started/upgrading-from-the-firebase-spark-plan-to-the-blaze-plan-tled)
 
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling3.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling3.webp)
     - Select your country instead of India.
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling4.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling4.webp)
     - Select your existing payment profile, or click **'Create New Payment Profile'** if you don't have one.
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling5.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling5.webp)
     - Add details of payment account.
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling6.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling6.webp)
     - Select your existing payment method, or click 'Add Payment Method' if you don't have one.
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling7.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling7.webp)
     - Select your payment method.
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling8.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling8.webp)
 
 ## Setting Up Billing on Map and Place API Keys
 
@@ -61,30 +61,30 @@ Regarding Firebase OTP and Maps setup — if you've already set up billing for F
 3. In the Cloud Console, navigate to **APIs & Services > Library**.
 4. Enable the following APIs:
     - **Maps SDK for Android** to display maps on Android devices
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling9.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling9.webp)
     - **Maps SDK for iOS** to display maps on iOS devices
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling10.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling10.webp)
     - **Geocoding API** for converting addresses into coordinates **(optional)**
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling11.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling11.webp)
     - **Places API** for location search and autocomplete
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling12.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling12.webp)
     - **Routes API** for calculating distance between locations   
     :::warning
     Distance Matrix API is now deprecated, so it's necessary to enable the Routes API.
     :::
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling13.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling13.webp)
     - **Maps JavaScript API** for displaying maps
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling14.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling14.webp)
 
 ## 3️⃣ Set Up API Keys
 1. In the Cloud Console, navigate to **APIs & Services > Credentials**.
-![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling17.png)
+![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling17.webp)
 2. Click **Create Credentials** and select **API Key**.
-![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling18.png)
+![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling18.webp)
 
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling19.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling19.webp)
 3. API Key Management for **Android**, **iOS**, and **Place Services** (remove Restrictions from Android, iOS and Place Search API newly created), Please Ignore if Already **Unrestricted**.
-![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling20.png)
+![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling20.webp)
 
 ## 4️⃣ Add the API Key to Your App
 1. In your Flutter app, locate the **AndroidManifest.xml** (for Android) or **AppDelegate.swift** (for iOS).
@@ -97,7 +97,7 @@ Regarding Firebase OTP and Maps setup — if you've already set up billing for F
 
     - `android/app/src/main/AndroidManifest.xml`
 
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling15.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling15.webp)
 
 2. For iOS, add the key in **AppDelegate.swift**:   
     ```
@@ -106,7 +106,7 @@ Regarding Firebase OTP and Maps setup — if you've already set up billing for F
 
     - `ios/Runner/AppDelegate.swift`
 
-    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling16.png)
+    ![firebaseBilling](../../static/img/firebaseBilling/firebaseBilling16.webp)
 
 ## 5️⃣ Verify Billing Setup
 1. In the Cloud Console, go to **Billing** and ensure the project is linked to your billing account.
