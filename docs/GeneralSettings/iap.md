@@ -117,8 +117,6 @@ And click **Edit**, then select the IAP you just created. Click **Done**.
 
 That's it! 🎊 You have successfully created IAP in App Store Connect. You can check and test the IAP with TestFlight, and make sure it works as expected. Then submit the app for review.
 
-### Test Purchase IAP
-
 ## Google Play Console
 
 ### Check Availability
