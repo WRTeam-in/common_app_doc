@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-GeneralSettings/deployment/playstore" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">PlayStore deployment | General Doc</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://wrteam-in.github.io/common_app_doc/GeneralSettings/deployment/playstore"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PlayStore deployment | General Doc"><meta data-rh="true" name="description" content="App Deployment"><meta data-rh="true" property="og:description" content="App Deployment"><link data-rh="true" rel="icon" href="/common_app_doc/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/deployment/playstore"><link data-rh="true" rel="alternate" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/deployment/playstore" hreflang="en"><link data-rh="true" rel="alternate" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/deployment/playstore" hreflang="x-default"><link rel="stylesheet" href="/common_app_doc/assets/css/styles.cd84669c.css">
+<script src="/common_app_doc/assets/js/runtime~main.201b7c45.js" defer="defer"></script>
+<script src="/common_app_doc/assets/js/main.e30950d9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/common_app_doc/"><b class="navbar__title text--truncate">General Doc</b></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently dark mode)" aria-label="Switch between dark and light mode (currently dark mode)" aria-live="polite" aria-pressed="true"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/common_app_doc/category/general-settings">General Settings</a><button aria-label="Collapse sidebar category &#x27;General Settings&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/iap">IAP (In App Purchase)</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/common_app_doc/GeneralSettings/advertisement">Advertisement</a><button aria-label="Expand sidebar category &#x27;Advertisement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/basicsetup">Flutter &amp; Java JDK Setup</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/common_app_doc/GeneralSettings/deeplink">Deep Link Setup</a><button aria-label="Expand sidebar category &#x27;Deep Link Setup&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/common_app_doc/GeneralSettings/deployment">App Deployment</a><button aria-label="Collapse sidebar category &#x27;App Deployment&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/common_app_doc/GeneralSettings/deployment/playstore">PlayStore deployment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/deployment/appstore">iOS App Deployment</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/firebase">Firebase Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/firebase-billing">Firebase Billing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/notifications">Notifications</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/packagename">Package Name Addition</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/appicon">App Icon Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/common_app_doc/GeneralSettings/assets">Assets Management</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/common_app_doc/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/common_app_doc/category/general-settings"><span itemprop="name">General Settings</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/common_app_doc/GeneralSettings/deployment"><span itemprop="name">App Deployment</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">PlayStore deployment</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>PlayStore deployment</h1></header>
+<p><img decoding="async" loading="lazy" alt="App Deployment" src="/common_app_doc/assets/images/header-d86654bcc6a6163f713421f155884931.png" width="1284" height="719" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>This guide provides a comprehensive walkthrough for deploying your Flutter app to the Google Play Store and App Store. We&#x27;ll cover everything from account setup to app submission, making it easy for non-technical users to follow.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<p>Before starting the deployment process, ensure you have:</p>
+<ol>
+<li>A Google Play Developer Account ($25 one-time fee)</li>
+<li>Your Flutter app ready for release</li>
+<li>Basic understanding of using command line/terminal</li>
+<li>Required assets:<!-- -->
+<ul>
+<li>App icon (512x512 px)</li>
+<li>Feature graphic (1024x500 px)</li>
+<li>Screenshots for different devices (Phone, Tablet)</li>
+<li>Privacy policy URL</li>
+<li>Short description (up to 80 characters)</li>
+<li>Full description (up to 4000 characters)</li>
+<li>Promotional video (optional)</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-guide">Step-by-Step Guide<a href="#step-by-step-guide" class="hash-link" aria-label="Direct link to Step-by-Step Guide" title="Direct link to Step-by-Step Guide">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-developer-account-setup">1. Developer Account Setup<a href="#1-developer-account-setup" class="hash-link" aria-label="Direct link to 1. Developer Account Setup" title="Direct link to 1. Developer Account Setup">​</a></h3>
+<ol>
+<li>Visit <a href="https://play.google.com/console" target="_blank" rel="noopener noreferrer">Google Play Console</a></li>
+<li>Choose your account type:<!-- -->
+<ul>
+<li>Individual developer (additional testing requirements)</li>
+<li>Organization (requires D-U-N-S Number)</li>
+</ul>
+</li>
+<li>Complete registration:<!-- -->
+<ul>
+<li>Pay $25 registration fee</li>
+<li>Verify your identity</li>
+<li>Set up payment profile</li>
+<li>Provide contact information</li>
+<li>Accept developer agreement</li>
+</ul>
+</li>
+<li>For Organization accounts:<!-- -->
+<ul>
+<li>Obtain D-U-N-S Number (takes 1-30 business days)</li>
+<li>Submit business verification documents</li>
+<li>Provide organization details</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-app-configuration">2. App Configuration<a href="#2-app-configuration" class="hash-link" aria-label="Direct link to 2. App Configuration" title="Direct link to 2. App Configuration">​</a></h3>
+<p>Before building your app, update these files:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="update-pubspecyaml">Update pubspec.yaml<a href="#update-pubspecyaml" class="hash-link" aria-label="Direct link to Update pubspec.yaml" title="Direct link to Update pubspec.yaml">​</a></h4>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token key atrule">version</span><span class="token punctuation" style="color:rgb(248, 248, 242)">:</span><span class="token plain"> 1.0.0+1  </span><span class="token comment" style="color:rgb(98, 114, 164)"># Format: version_name+version_code</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<blockquote>
+<p><strong>Important Version Note:</strong></p>
+<ul>
+<li>The version format is <code>version_name+version_code</code> (e.g., <code>1.0.0+1</code>)</li>
+<li><code>version_name</code> (1.0.0): Represents the public version number shown to users</li>
+<li><code>version_code</code> (1): Internal version number used by Play Store</li>
+<li><strong>For every new release</strong>, you MUST increment the <code>version_code</code> by at least 1</li>
+<li>Example sequence:<!-- -->
+<ul>
+<li>First release: <code>1.0.0+1</code></li>
+<li>Bug fix update: <code>1.0.1+2</code></li>
+<li>Feature update: <code>1.1.0+3</code></li>
+<li>Major update: <code>2.0.0+4</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="configure-android-manifest">Configure Android Manifest<a href="#configure-android-manifest" class="hash-link" aria-label="Direct link to Configure Android Manifest" title="Direct link to Configure Android Manifest">​</a></h4>
+<p>Navigate to <code>android/app/src/main/AndroidManifest.xml</code>:</p>
+<div class="language-xml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-xml codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&lt;</span><span class="token tag" style="color:rgb(255, 121, 198)">manifest</span><span class="token tag" style="color:rgb(255, 121, 198)"> </span><span class="token tag attr-name namespace" style="color:rgb(241, 250, 140)">xmlns:</span><span class="token tag attr-name" style="color:rgb(241, 250, 140)">android</span><span class="token tag attr-value punctuation attr-equals" style="color:rgb(248, 248, 242)">=</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag attr-value" style="color:rgb(255, 121, 198)">http://schemas.android.com/apk/res/android</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&lt;</span><span class="token tag" style="color:rgb(255, 121, 198)">application</span><span class="token tag" style="color:rgb(255, 121, 198)"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token tag" style="color:rgb(255, 121, 198)">        </span><span class="token tag attr-name namespace" style="color:rgb(241, 250, 140)">android:</span><span class="token tag attr-name" style="color:rgb(241, 250, 140)">label</span><span class="token tag attr-value punctuation attr-equals" style="color:rgb(248, 248, 242)">=</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag attr-value" style="color:rgb(255, 121, 198)">Your App Name</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag" style="color:rgb(255, 121, 198)"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token tag" style="color:rgb(255, 121, 198)">        </span><span class="token tag attr-name namespace" style="color:rgb(241, 250, 140)">android:</span><span class="token tag attr-name" style="color:rgb(241, 250, 140)">icon</span><span class="token tag attr-value punctuation attr-equals" style="color:rgb(248, 248, 242)">=</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag attr-value" style="color:rgb(255, 121, 198)">@mipmap/ic_launcher</span><span class="token tag attr-value punctuation" style="color:rgb(248, 248, 242)">&quot;</span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        </span><span class="token comment" style="color:rgb(98, 114, 164)">&lt;!-- Your app configuration --&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&lt;/</span><span class="token tag" style="color:rgb(255, 121, 198)">application</span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&lt;/</span><span class="token tag" style="color:rgb(255, 121, 198)">manifest</span><span class="token tag punctuation" style="color:rgb(248, 248, 242)">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-generate-app-signing-key">3. Generate App Signing Key<a href="#3-generate-app-signing-key" class="hash-link" aria-label="Direct link to 3. Generate App Signing Key" title="Direct link to 3. Generate App Signing Key">​</a></h3>
+<ol>
+<li>Open terminal in project directory</li>
+<li>Run command:</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="for-maclinux">For Mac/Linux<a href="#for-maclinux" class="hash-link" aria-label="Direct link to For Mac/Linux" title="Direct link to For Mac/Linux">​</a></h4>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">keytool -genkey -v -keystore YOUR-KEYSTORE-FILE.jks -keyalg RSA -keysize 2048 -validity 10000 -alias YOUR-ALIAS</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="for-windows">For Windows<a href="#for-windows" class="hash-link" aria-label="Direct link to For Windows" title="Direct link to For Windows">​</a></h4>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">keytool -genkey -v -keystore YOUR-KEYSTORE-FILE.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias YOUR-ALIAS</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="3">
+<li>Follow prompts to create keystore:<!-- -->
+<ul>
+<li>Enter password</li>
+<li>Provide your details</li>
+<li>Confirm information</li>
+</ul>
+</li>
+<li>Store keystore file securely</li>
+<li>Make backup copies of the keystore</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create JKS File" src="/common_app_doc/assets/images/createJKSFile-a6db6304e084c6144d18542e6d58d045.png" width="2028" height="1071" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-configure-key-properties">4. Configure Key Properties<a href="#4-configure-key-properties" class="hash-link" aria-label="Direct link to 4. Configure Key Properties" title="Direct link to 4. Configure Key Properties">​</a></h3>
+<p>Create <code>key.properties</code> in <code>android</code> folder:</p>
+<div class="language-properties codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-properties codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">storePassword=&lt;your keystore password&gt;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">keyPassword=&lt;your key password&gt;</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">keyAlias=upload</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">storeFile=&lt;path to your keystore file&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><img decoding="async" loading="lazy" alt="Create key.properties File" src="/common_app_doc/assets/images/createKeyProperties-02adfeea9e516d09515f778e28c6b285.png" width="2028" height="1071" class="img_ev3q"></p>
+<p>Update <code>android/app/build.gradle</code>:</p>
+<ol>
+<li>Open your <code>build.gradle</code> file.</li>
+<li>Look for the required code blocks:<!-- -->
+<ul>
+<li>✅ <strong>If present</strong>: No changes needed.</li>
+<li>❌ <strong>If missing</strong>: Add the required code blocks manually.</li>
+</ul>
+</li>
+</ol>
+<div class="language-gradle codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-gradle codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">def keystoreProperties = new Properties()</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">def keystorePropertiesFile = rootProject.file(&#x27;key.properties&#x27;)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">if (keystorePropertiesFile.exists()) {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><img decoding="async" loading="lazy" alt="change build.gradle file" src="/common_app_doc/assets/images/buildGradle-16925935d4bad495675bbf0f565b51ac.png" width="2028" height="1071" class="img_ev3q"></p>
+<div class="language-gradle codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-gradle codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">signingConfigs {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        release {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">            keyAlias keystoreProperties[&#x27;keyAlias&#x27;]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">            keyPassword keystoreProperties[&#x27;keyPassword&#x27;]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">            storeFile keystoreProperties[&#x27;storeFile&#x27;] ? file(keystoreProperties[&#x27;storeFile&#x27;]) : null</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">            storePassword keystoreProperties[&#x27;storePassword&#x27;]</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        }</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    }</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><img decoding="async" loading="lazy" alt="change build.gradle file" src="/common_app_doc/assets/images/buildGradle1-ccbadcf8275aa62f26ab8a5b4ca530ce.png" width="2012" height="1051" class="img_ev3q"></p>
+<div class="language-gradle codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-gradle codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">signingConfig signingConfigs.release</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><img decoding="async" loading="lazy" alt="change build.gradle file" src="/common_app_doc/assets/images/buildGradle1-ccbadcf8275aa62f26ab8a5b4ca530ce.png" width="2012" height="1051" class="img_ev3q"></p>
+<ol start="3">
+<li>Save the file.</li>
+<li>Sync your project to apply the changes.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-build-your-app">5. Build Your App<a href="#5-build-your-app" class="hash-link" aria-label="Direct link to 5. Build Your App" title="Direct link to 5. Build Your App">​</a></h3>
+<ol>
+<li>Open terminal in project directory</li>
+<li>Run command:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">flutter build appbundle --release</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="3">
+<li>Optional flags:<!-- -->
+<ul>
+<li><code>--obfuscate</code> - To protect your code</li>
+<li><code>--split-debug-info</code> - For crash reporting</li>
+</ul>
+</li>
+<li>Wait for build completion</li>
+<li>Find app bundle at: <code>build/app/outputs/bundle/release/app.aab</code></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-app-setup">6. App Setup<a href="#6-app-setup" class="hash-link" aria-label="Direct link to 6. App Setup" title="Direct link to 6. App Setup">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-app-listing">Create App Listing<a href="#create-app-listing" class="hash-link" aria-label="Direct link to Create App Listing" title="Direct link to Create App Listing">​</a></h4>
+<ol>
+<li>Go to Play Console</li>
+<li>Click &quot;Create app&quot;</li>
+<li>Fill basic information:<!-- -->
+<ul>
+<li>App name</li>
+<li>Default language</li>
+<li>App/game category</li>
+<li>Free/paid status</li>
+<li>Declaration of app content</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create New App" src="/common_app_doc/assets/images/createApp-64d0f88e22f0e39337806e24dcbb74bd.png" width="2028" height="1070" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="complete-store-listing">Complete Store Listing<a href="#complete-store-listing" class="hash-link" aria-label="Direct link to Complete Store Listing" title="Direct link to Complete Store Listing">​</a></h4>
+<p><img decoding="async" loading="lazy" alt="Store Listing Page" src="/common_app_doc/assets/images/setupApp-08bd1d059925efe0d2b33c93fa4fd1bc.png" width="2028" height="1070" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="let-us-know-about-the-content-of-your-app">Let Us Know About The Content Of Your App<a href="#let-us-know-about-the-content-of-your-app" class="hash-link" aria-label="Direct link to Let Us Know About The Content Of Your App" title="Direct link to Let Us Know About The Content Of Your App">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-set-privacy-policy">1. Set Privacy Policy<a href="#1-set-privacy-policy" class="hash-link" aria-label="Direct link to 1. Set Privacy Policy" title="Direct link to 1. Set Privacy Policy">​</a></h4>
+<ul>
+<li>Required for all apps</li>
+<li>Must be accessible without requiring a login</li>
+<li>Include:<!-- -->
+<ul>
+<li>Data collection and usage</li>
+<li>Security practices</li>
+<li>Data deletion policies</li>
+<li>Contact information</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-app-access">2. App Access<a href="#2-app-access" class="hash-link" aria-label="Direct link to 2. App Access" title="Direct link to 2. App Access">​</a></h4>
+<ul>
+<li>Specify if app requires login</li>
+<li>Provide test account credentials if needed</li>
+<li>List any special access requirements</li>
+<li>Detail any region restrictions</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-ads-declaration">3. Ads Declaration<a href="#3-ads-declaration" class="hash-link" aria-label="Direct link to 3. Ads Declaration" title="Direct link to 3. Ads Declaration">​</a></h4>
+<ul>
+<li>Indicate if your app contains ads</li>
+<li>Specify types of ads used:<!-- -->
+<ul>
+<li>Banner ads</li>
+<li>Interstitial ads</li>
+<li>Rewarded ads</li>
+<li>Native ads</li>
+</ul>
+</li>
+<li>Declare ad networks used</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-content-rating">4. Content Rating<a href="#4-content-rating" class="hash-link" aria-label="Direct link to 4. Content Rating" title="Direct link to 4. Content Rating">​</a></h4>
+<ul>
+<li>Complete questionnaire about:<!-- -->
+<ul>
+<li>Violence</li>
+<li>Sexual content</li>
+<li>Language</li>
+<li>Controlled substances</li>
+<li>Miscellaneous</li>
+</ul>
+</li>
+<li>Rating affects app visibility and target audience</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-target-audience">5. Target Audience<a href="#5-target-audience" class="hash-link" aria-label="Direct link to 5. Target Audience" title="Direct link to 5. Target Audience">​</a></h4>
+<ul>
+<li>Select target age groups</li>
+<li>Specify if app is designed for children</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="6-news-apps-if-applicable">6. News Apps (if applicable)<a href="#6-news-apps-if-applicable" class="hash-link" aria-label="Direct link to 6. News Apps (if applicable)" title="Direct link to 6. News Apps (if applicable)">​</a></h4>
+<ul>
+<li>Declare if app provides news content</li>
+<li>Provide publisher information</li>
+<li>Detail editorial policies</li>
+<li>Verify news sources</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="7-data-safety">7. Data Safety<a href="#7-data-safety" class="hash-link" aria-label="Direct link to 7. Data Safety" title="Direct link to 7. Data Safety">​</a></h4>
+<ul>
+<li>Declare all data collection:<!-- -->
+<ul>
+<li>Location</li>
+<li>Personal information</li>
+<li>Files and media</li>
+<li>Device information</li>
+</ul>
+</li>
+<li>Explain data usage:<!-- -->
+<ul>
+<li>App functionality</li>
+<li>Analytics</li>
+<li>Personalization</li>
+<li>Advertising</li>
+</ul>
+</li>
+<li>Detail data security measures</li>
+<li>Specify data sharing practices</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="8-government-apps-if-applicable">8. Government Apps (if applicable)<a href="#8-government-apps-if-applicable" class="hash-link" aria-label="Direct link to 8. Government Apps (if applicable)" title="Direct link to 8. Government Apps (if applicable)">​</a></h4>
+<ul>
+<li>Verify government association</li>
+<li>Provide official documentation</li>
+<li>Detail security measures</li>
+<li>Specify jurisdiction</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="9-financial-apps-if-applicable">9. Financial Apps (if applicable)<a href="#9-financial-apps-if-applicable" class="hash-link" aria-label="Direct link to 9. Financial Apps (if applicable)" title="Direct link to 9. Financial Apps (if applicable)">​</a></h4>
+<ul>
+<li>Declare financial services offered</li>
+<li>Provide licensing information</li>
+<li>Detail security measures</li>
+<li>Specify supported regions</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="10-health-apps-if-applicable">10. Health Apps (if applicable)<a href="#10-health-apps-if-applicable" class="hash-link" aria-label="Direct link to 10. Health Apps (if applicable)" title="Direct link to 10. Health Apps (if applicable)">​</a></h4>
+<ul>
+<li>Declare health-related features</li>
+<li>Provide medical disclaimers</li>
+<li>Detail data protection measures</li>
+<li>List any certifications</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="11-categorization">11. Categorization<a href="#11-categorization" class="hash-link" aria-label="Direct link to 11. Categorization" title="Direct link to 11. Categorization">​</a></h4>
+<ul>
+<li>Primary category selection</li>
+<li>Tags and keywords</li>
+<li>Contact details<!-- -->
+<ul>
+<li>Email address</li>
+<li>Phone number</li>
+<li>Website</li>
+<li>Physical address</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Create Category" src="/common_app_doc/assets/images/selectCategory-883beea5a725b5317c31f0af01ca0967.png" width="2028" height="1070" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Select Category" src="/common_app_doc/assets/images/editCategory-e99ae00a7c798ba4907b84ad23e29352.png" width="2028" height="1070" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="12-store-listing-details">12. Store Listing Details<a href="#12-store-listing-details" class="hash-link" aria-label="Direct link to 12. Store Listing Details" title="Direct link to 12. Store Listing Details">​</a></h4>
+<ul>
+<li>App name (30 characters max)</li>
+<li>Short description (80 characters max)</li>
+<li>Full description (4000 characters max)</li>
+<li>What&#x27;s new in this release</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="1-visual-assets">1. Visual Assets<a href="#1-visual-assets" class="hash-link" aria-label="Direct link to 1. Visual Assets" title="Direct link to 1. Visual Assets">​</a></h5>
+<ul>
+<li>
+<p>App icon requirements:</p>
+<ul>
+<li>512x512 px PNG</li>
+<li>Maximum file size: 1MB</li>
+</ul>
+</li>
+<li>
+<p>Feature graphic:</p>
+<ul>
+<li>1024x500 px</li>
+<li>JPG or PNG</li>
+<li>Maximum file size: 15MB</li>
+</ul>
+</li>
+<li>
+<p>Screenshots:</p>
+<ul>
+<li>Phone screenshots (minimum 2)<!-- -->
+<ul>
+<li>16:9 aspect ratio</li>
+<li>Minimum 1920x1080 px</li>
+</ul>
+</li>
+<li>Tablet screenshots (if supported)<!-- -->
+<ul>
+<li>16:9 aspect ratio</li>
+<li>Minimum 2048x1536 px</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Create Store Listing" src="/common_app_doc/assets/images/createStoreListing-1a0ef7b0febda69c18fda9f9a8ed1016.png" width="2028" height="1070" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Manage Store Listing" src="/common_app_doc/assets/images/storeListing-60e0ffcf4e040f6eaf0ffa42a06d1abc.png" width="1916" height="3915" class="img_ev3q"></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="2-languages-and-translations">2. Languages and Translations<a href="#2-languages-and-translations" class="hash-link" aria-label="Direct link to 2. Languages and Translations" title="Direct link to 2. Languages and Translations">​</a></h5>
+<ul>
+<li>Default language selection</li>
+<li>Additional language support</li>
+<li>Localized store listings<!-- -->
+<ul>
+<li>Translations of descriptions</li>
+<li>Language-specific screenshots</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Create Store Listing" src="/common_app_doc/assets/images/defaultLanguage-07dacfbaae8943df19dd6df2136ad13d.png" width="2028" height="1070" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-testing-setup">8. Testing Setup<a href="#8-testing-setup" class="hash-link" aria-label="Direct link to 8. Testing Setup" title="Direct link to 8. Testing Setup">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-testing-requirements">Understanding Testing Requirements<a href="#understanding-testing-requirements" class="hash-link" aria-label="Direct link to Understanding Testing Requirements" title="Direct link to Understanding Testing Requirements">​</a></h4>
+<p>For personal developer accounts created after November 13, 2023, you must meet specific testing requirements before publishing your app on Google Play:</p>
+<ul>
+<li>Run a closed test with minimum 12 testers</li>
+<li>Testers must be opted-in for at least 14 consecutive days</li>
+<li>Complete an application process for production access</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="testing-tracks-overview">Testing Tracks Overview<a href="#testing-tracks-overview" class="hash-link" aria-label="Direct link to Testing Tracks Overview" title="Direct link to Testing Tracks Overview">​</a></h4>
+<ol>
+<li>
+<p><strong>Internal Testing</strong></p>
+<ul>
+<li>Purpose: Quick distribution to trusted testers</li>
+<li>Features:<!-- -->
+<ul>
+<li>Available before app setup completion</li>
+<li>Builds available within seconds</li>
+<li>Small group of trusted testers</li>
+<li>Optional but recommended first step</li>
+</ul>
+</li>
+<li>No specific requirements to access</li>
+</ul>
+</li>
+<li>
+<p><strong>Closed Testing</strong></p>
+<ul>
+<li>Purpose: Testing with controlled user group</li>
+<li>Requirements:<!-- -->
+<ul>
+<li>Must complete app setup</li>
+<li>Minimum 12 opted-in testers</li>
+<li>14 consecutive days of testing</li>
+</ul>
+</li>
+<li>Features:<!-- -->
+<ul>
+<li>Policy compliance verification</li>
+<li>Bug fixing</li>
+<li>User feedback collection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Open Testing</strong></p>
+<ul>
+<li>Purpose: Public testing on Google Play</li>
+<li>Requirements:<!-- -->
+<ul>
+<li>Must have production access</li>
+<li>App visible on Google Play</li>
+</ul>
+</li>
+<li>Features:<!-- -->
+<ul>
+<li>Anyone can join testing</li>
+<li>Private feedback collection</li>
+<li>Public visibility</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Production</strong></p>
+<ul>
+<li>Purpose: Full public release</li>
+<li>Requirements:<!-- -->
+<ul>
+<li>Successful closed testing</li>
+<li>12+ testers for 14 days</li>
+<li>Approved application for production access</li>
+</ul>
+</li>
+<li>Features:<!-- -->
+<ul>
+<li>Full Play Store distribution</li>
+<li>Access to all Play Console features</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-production-release">9. Production Release<a href="#9-production-release" class="hash-link" aria-label="Direct link to 9. Production Release" title="Direct link to 9. Production Release">​</a></h3>
+<ol>
+<li>Create production track</li>
+<li>Select Countries</li>
+<li>Upload app bundle</li>
+<li>Add release notes:<!-- -->
+<ul>
+<li>What&#x27;s new</li>
+<li>Bug fixes</li>
+<li>Improvements</li>
+</ul>
+</li>
+<li>Configure rollout percentage</li>
+<li>Review all sections:<!-- -->
+<ul>
+<li>Store listing</li>
+<li>Content rating</li>
+<li>Data safety</li>
+<li>App content</li>
+</ul>
+</li>
+<li>Submit for review</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Select Countries" src="/common_app_doc/assets/images/selectCountries-3bc89d82bab86850b6f4be0a3f11d01f.png" width="2028" height="1070" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Create Release" src="/common_app_doc/assets/images/createNewRelease-ca866e78571f123a85f72213b471ae68.png" width="2028" height="1070" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Add Release Details" src="/common_app_doc/assets/images/addReleaseFile-dd4817bc366ccb40efefdf7c5db8fd70.png" width="1916" height="1558" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="10-post-release-tasks">10. Post-Release Tasks<a href="#10-post-release-tasks" class="hash-link" aria-label="Direct link to 10. Post-Release Tasks" title="Direct link to 10. Post-Release Tasks">​</a></h3>
+<ol>
+<li>Monitor app performance</li>
+<li>Track user feedback</li>
+<li>Address bug reports</li>
+<li>Plan updates</li>
+<li>Maintain compliance</li>
+</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/common_app_doc/GeneralSettings/deployment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Deployment</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/common_app_doc/GeneralSettings/deployment/appstore"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">iOS App Deployment</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#step-by-step-guide" class="table-of-contents__link toc-highlight">Step-by-Step Guide</a><ul><li><a href="#1-developer-account-setup" class="table-of-contents__link toc-highlight">1. Developer Account Setup</a></li><li><a href="#2-app-configuration" class="table-of-contents__link toc-highlight">2. App Configuration</a></li><li><a href="#3-generate-app-signing-key" class="table-of-contents__link toc-highlight">3. Generate App Signing Key</a></li><li><a href="#4-configure-key-properties" class="table-of-contents__link toc-highlight">4. Configure Key Properties</a></li><li><a href="#5-build-your-app" class="table-of-contents__link toc-highlight">5. Build Your App</a></li><li><a href="#6-app-setup" class="table-of-contents__link toc-highlight">6. App Setup</a></li><li><a href="#let-us-know-about-the-content-of-your-app" class="table-of-contents__link toc-highlight">Let Us Know About The Content Of Your App</a></li><li><a href="#8-testing-setup" class="table-of-contents__link toc-highlight">8. Testing Setup</a></li><li><a href="#9-production-release" class="table-of-contents__link toc-highlight">9. Production Release</a></li><li><a href="#10-post-release-tasks" class="table-of-contents__link toc-highlight">10. Post-Release Tasks</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2025 WRTeam.</div></div></div></footer></div>
+</body>
+</html>
