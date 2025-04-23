@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[143],{8465:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"General Settings","slug":"/category/general-settings","permalink":"/category/general-settings","sidebar":"generalSidebar","navigation":{"next":{"title":"IAP","permalink":"/GeneralSettings/iap"}}}}')}}]);

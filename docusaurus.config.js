@@ -5,11 +5,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "General Doc",
   tagline: "WRTeam",
-  //favicon: "img/edemand.svg",
-  url: "https://your-docusaurus-site.example.com",
-  baseUrl: "/",
+  url: "https://wrteam-in.github.io",
+  baseUrl: "/common_app_doc/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "WRTeam-in", // Usually your GitHub org/user name.
+  projectName: "common_app_doc", // Usually your repo name.
 
   i18n: {
     defaultLocale: "en",
