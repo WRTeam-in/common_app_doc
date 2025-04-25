@@ -50,7 +50,7 @@ Before creating IAP and offering them in your app, you must do two things:
 If you have not done this, usually App Store Connect gives you a warning like the following:
 
 <div align="center">
-  <img src="/img/iap/app_store_warning.png" alt="App Store Warning" style={{borderRadius: '8px'}} />
+  <img src="../img/iap/app_store_warning.png" alt="App Store Warning" style={{borderRadius: '8px'}} />
 </div>
 
 If you see something like the above, follow the steps to accept the appropriate agreements.
@@ -58,7 +58,7 @@ If you see something like the above, follow the steps to accept the appropriate 
 It’s also good to double-check the [Agreements, Tax, and Banking](https://appstoreconnect.apple.com/agreements/#/) section in App Store Connect:
 
 <div align="center" >
-  <img src="/img/iap/app_store_agreements.png" alt="App Store Agreements" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_agreements.png" alt="App Store Agreements" style={{borderRadius: '8px'}}/>
 </div>
 
 If you see a section entitled **Request Contracts** containing a row for **Paid Applications**, then click the **Request** button. Fill out all the necessary information and submit it. It may take some time for your request to be approved.
@@ -76,7 +76,7 @@ We'll create the IAP that your app will offer.
 Go to In app purchases section in App Store Connect and click on **Add new product** or + (plus) button in the top as shown in the image.
 
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_1.webp" alt="App Store IAP Page" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_1.webp" alt="App Store IAP Page" style={{borderRadius: '8px'}}/>
 </div>
 
 For **Type** select **Consumable** or **Non-Consumable** as shown in the image.
@@ -86,7 +86,7 @@ For **Reference Name** enter a unique name for your IAP.
 For **Product ID** enter a unique alphanumeric identifier. This identifier must be unique across all IAP products in your app as well as across all your apps in the App Store.
 
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_2.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_2.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
 </div>
 
 Then click on **Create**.
@@ -94,24 +94,24 @@ Then click on **Create**.
 Fill in **Availability**, **Price Schedule**
 
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_3.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_3.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
 </div>
 **App Store Localization** and **Review Information**
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_4.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_4.webp" alt="App Store Create IAP" style={{borderRadius: '8px'}}/>
 </div>
 Click on **Save** once done.
 
 Going back to the In App Purchases page, you should see your IAP listed with **Ready to Submit** status.
 
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_5.webp" alt="App Store IAP List" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_5.webp" alt="App Store IAP List" style={{borderRadius: '8px'}}/>
 </div>
 
 After that go to **App Submission** page and scroll down to **In-App Purchases and Subscriptions** section.
 
 <div align="center">
-  <img src="/img/iap/app_store_create_iap_6.webp" alt="App Store Edit IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/app_store_create_iap_6.webp" alt="App Store Edit IAP" style={{borderRadius: '8px'}}/>
 </div>
 And click **Edit**, then select the IAP you just created. Click **Done**.
 
@@ -132,7 +132,7 @@ To create an in-app product, do the following steps:
 1. Open Play Console.
 2. Go to the [In-app products](https://play.google.com/console/developers/app/managed-products) page (**Monetize with Play > Products > In-app products**). Click **Create product**.
 <div align="center">
-  <img src="/img/iap/play_console_create_iap_1.webp" alt="Play Console Create IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/play_console_create_iap_1.webp" alt="Play Console Create IAP" style={{borderRadius: '8px'}}/>
 </div>
 3. Enter your product details.
    - **Product ID:** A unique ID for your in-app product.
@@ -143,11 +143,11 @@ To create an in-app product, do the following steps:
      - Multi-quantity checkout is not available in some countries or regions.
      - In most countries or regions where multi-quantity checkout is available, the SKU price threshold is around USD 100. To allow multi-quantity checkout, you will need to adjust the price (before tax) to below the threshold in each country or region.
 <div align="center">
-  <img src="/img/iap/play_console_create_iap_2.webp" alt="Play Console Add IAP Details" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/play_console_create_iap_2.webp" alt="Play Console Add IAP Details" style={{borderRadius: '8px'}}/>
 </div>
 4. Save your changes and click **Activate** to make your in-app product available to users.
 <div align="center">
-  <img src="/img/iap/play_console_create_iap_3.webp" alt="Play Console Save and Activate IAP" style={{borderRadius: '8px'}}/>
+  <img src="../img/iap/play_console_create_iap_3.webp" alt="Play Console Save and Activate IAP" style={{borderRadius: '8px'}}/>
 </div>
 
 

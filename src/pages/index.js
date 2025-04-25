@@ -1,5 +1,7 @@
 import { Redirect } from "@docusaurus/router";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export default function Home() {
-  return <Redirect to="/category/general-settings" />;
+  const generalSettingsUrl = useBaseUrl("/general-settings");
+  return <Redirect to={generalSettingsUrl} />;
 }

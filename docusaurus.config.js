@@ -18,7 +18,29 @@ const config = {
     locales: ["en"],
   },
 
-  plugins: [require.resolve("@easyops-cn/docusaurus-search-local")],
+  plugins: [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/common_app_doc/category/general-settings",
+            to: "/common_app_doc/general-settings",
+          },
+          {
+            from: "/category/general-settings",
+            to: "/common_app_doc/general-settings",
+          },
+          // Handle URLs without baseUrl
+          {
+            from: "/general-settings",
+            to: "/common_app_doc/general-settings",
+          },
+        ],
+      },
+    ],
+  ],
 
   presets: [
     [
