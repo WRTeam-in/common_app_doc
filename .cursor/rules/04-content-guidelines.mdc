@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Content Guidelines
+
+Guidelines for writing and formatting documentation in this project.
+
+## Writing Style
+
+- Use clear, concise language
+- Write in a conversational tone
+- Use active voice when possible
+- Break complex information into smaller chunks
+- Use headings and subheadings to organize content
+
+## Formatting
+
+- Use Markdown for all documentation files
+- Follow a consistent heading structure (H1 → H2 → H3)
+- Use bullet points for lists of items
+- Use numbered lists for sequential steps
+- Include code examples with proper syntax highlighting
+
+## Images and Assets
+
+- Store images in the [static/img/](mdc:static/img) directory
+- Use descriptive filenames for images
+- Include alt text for accessibility
+- Optimize images for web (compress when possible)
+- Use screenshots to illustrate UI elements
+
+## Code Examples
+
+- Include complete, working code examples when possible
+- Use appropriate language syntax highlighting
+- Add comments to explain complex parts
+- Format code consistently
+- Test all code examples before adding them to documentation

@@ -26,16 +26,16 @@ const config = {
         redirects: [
           {
             from: "/common_app_doc/category/general-settings",
-            to: "/common_app_doc/general-settings",
+            to: "/general-settings",
           },
           {
             from: "/category/general-settings",
-            to: "/common_app_doc/general-settings",
+            to: "/general-settings",
           },
           // Handle URLs without baseUrl
           {
             from: "/general-settings",
-            to: "/common_app_doc/general-settings",
+            to: "/general-settings",
           },
         ],
       },

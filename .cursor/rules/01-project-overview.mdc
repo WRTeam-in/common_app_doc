@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Overview
+
+This is a documentation site built with [Docusaurus](mdc:https:/docusaurus.io), a modern static website generator.
+
+## Key Files and Directories
+
+- [package.json](mdc:package.json): Contains project dependencies and scripts
+- [docusaurus.config.js](mdc:docusaurus.config.js): Main configuration file for Docusaurus
+- [sidebars.js](mdc:sidebars.js): Defines the sidebar navigation structure
+- [docs/](mdc:docs): Contains all the documentation markdown files
+- [src/](mdc:src): Custom components and CSS
+- [static/](mdc:static): Static assets like images
+
+## Getting Started
+
+To run the site locally:
+1. Install dependencies with `yarn`
+2. Start the development server with `yarn start`
+3. Build the site with `yarn build`

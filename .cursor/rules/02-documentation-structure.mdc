@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Documentation Structure
+
+The documentation is organized in the `docs/` directory, with a hierarchical structure.
+
+## Content Organization
+
+- [docs/GeneralSettings/](mdc:docs/GeneralSettings): Contains general settings documentation
+  - Basic setup guides
+  - Firebase configuration
+  - Notifications
+  - App icon setup
+  - Package name configuration
+  - And more
+
+## Adding New Documentation
+
+1. Create a new markdown file in the appropriate directory with the `.md` extension
+2. Add metadata at the top of the file:
+   ```md
+   ---
+   sidebar_position: X
+   title: Your Title
+   ---
+   ```
+3. Use Markdown syntax for the content
+4. Add the file to the sidebar by updating [sidebars.js](mdc:sidebars.js) if needed
+
+## Markdown Features
+
+- Use standard Markdown syntax
+- Add images with `![alt text](mdc:img/image.png)`
+- Create code blocks with triple backticks and specify the language
+- Use admonitions for callouts:
+  ```md
+  :::note
+  This is a note
+  :::
+
+  :::tip
+  This is a tip
+  :::
+
+  :::warning
+  This is a warning
+  :::
+  ```
