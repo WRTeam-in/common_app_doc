@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+pagination_next: null
+pagination_prev: null
 ---
 
 # Assets Management

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 description: A guide to setting up In-App Purchases for App Store and Play Console
+pagination_next: null
+pagination_prev: null
 tags:
   - IAP
   - In-App Purchase

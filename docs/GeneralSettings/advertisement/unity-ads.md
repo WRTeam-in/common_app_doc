@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+pagination_next: null
+pagination_prev: null
 ---
 
 # Integrating Unity Ads into Your Flutter App

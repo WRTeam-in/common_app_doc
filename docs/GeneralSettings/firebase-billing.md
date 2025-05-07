@@ -2,6 +2,8 @@
 title: Firebase Billing
 description: Enable Firebase Billing for OTP Login, Maps and Places API
 sidebar_position: 6
+pagination_next: null
+pagination_prev: null
 ---
 
 # Enable Firebase Billing

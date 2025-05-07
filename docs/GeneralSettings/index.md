@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: General Settings Overview
+pagination_next: null
+pagination_prev: null
 ---
 
 # General Settings

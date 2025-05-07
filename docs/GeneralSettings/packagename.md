@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+pagination_next: null
+pagination_prev: null
 ---
 
 # Package Name Addition

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+pagination_next: null
+pagination_prev: null
 ---
 
 # App Icon Setup

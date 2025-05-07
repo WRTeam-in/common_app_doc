@@ -1,6 +1,8 @@
 ---
 slug: /GeneralSettings/deeplink
 sidebar_position: 1
+pagination_next: null
+pagination_prev: null
 ---
 
 # 📌 Deep Link Setup 🚀
