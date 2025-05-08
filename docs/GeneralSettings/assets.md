@@ -1,5 +1,8 @@
 ---
 sidebar_position: 11
+title: Assets Management
+hide_title: true
+hide_table_of_contents: true
 ---
 
 # Assets Management

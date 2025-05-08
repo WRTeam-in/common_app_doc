@@ -1,5 +1,8 @@
 ---
 sidebar_position: 4
+title: Flutter & Java JDK Setup
+hide_title: true
+hide_table_of_contents: true
 ---
 
 # Flutter & Java JDK Setup

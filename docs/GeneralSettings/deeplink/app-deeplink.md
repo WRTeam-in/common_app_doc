@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Deep Link Setup In Flutter Code
 ---
 
 # Deep Link Setup In Flutter Code

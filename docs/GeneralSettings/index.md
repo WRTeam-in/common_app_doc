@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: General Settings Overview
+hide_title: true
+hide_table_of_contents: true
 ---
 
 # General Settings

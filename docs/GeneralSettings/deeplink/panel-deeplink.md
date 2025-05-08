@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Deep Link Setup In Panel
 ---
 
 # Deep Link Setup In Panel

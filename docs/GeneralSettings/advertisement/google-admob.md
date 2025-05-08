@@ -50,6 +50,46 @@ Once your account is set up, you need to register your application with AdMob.
 
 ![iOS App Setup Process](/img/googleads/googleads2.gif)
 
+
+## 2.1 App Validation
+
+App validation ensures that the AdMob SDK is correctly initialized in your app. The validation process differs depending on whether your app is **published** or **unpublished**.
+
+### 🔹 For Published Apps
+
+If your app is already live on the **Google Play Store** or **Apple App Store**:
+
+- AdMob will **automatically validate your app** once the SDK is integrated and users start using the app.
+- No manual steps are needed.
+- You can monitor the validation status in the [AdMob Console](https://apps.admob.com) under "Apps" > "App settings".
+
+> ✅ **Tip:** Make sure the app includes the correct App ID and Ad Unit IDs in the SDK initialization code.
+
+---
+
+### 🔹 For Unpublished Apps
+
+If your app is **not yet published**, you must trigger validation manually:
+
+1. **Complete SDK Integration:**
+   - Follow the integration steps for Android (using `AndroidManifest.xml`) or iOS (using `Info.plist`) as shown in Section 4.
+
+2. **Use a Real Device:**
+   - Install your app (debug or release) on a real physical device (not an emulator).
+   - Launch the app and keep it open for a few seconds.
+
+3. **Wait for Validation:**
+   - Google will detect that your app has initialized the AdMob SDK.
+   - App status in the AdMob dashboard should change from **"Not yet validated"** to **"Ready to serve ads"** within a few hours.
+
+4. **Verify in Console:**
+   - In the [AdMob Console](https://apps.admob.com), check your app status under "Apps".
+   - If validation is successful, you'll see a message like **"SDK detected"**.
+
+> 💡 **Important:** Use **test ads** during validation to avoid any policy violations.
+
+
+
 ## 3. Finding Your App IDs
 
 After registering your apps, you need to obtain the App IDs for both platforms.
@@ -222,3 +262,5 @@ If ads aren't showing in your app:
 4. Make sure you're not using an ad blocker
 
 📚 For more detailed information, refer to the [Official AdMob Documentation](https://developers.google.com/admob). 
+
+
