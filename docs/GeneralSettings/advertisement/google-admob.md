@@ -58,9 +58,9 @@ Once your account is set up, you need to register your application with AdMob.
 Proper validation and `app-ads.txt` configuration ensure your app is authorized to serve ads and earn revenue.
 
 
-### 🔹 App Validation
+### App Validation
 
-#### 🟢 For Published Apps
+#### For Published Apps
 
 If your app is already live on the **Google Play Store** or **Apple App Store**:
 
@@ -68,11 +68,11 @@ If your app is already live on the **Google Play Store** or **Apple App Store**:
 - No manual steps are needed.
 - You can monitor the validation status in the [AdMob Console](https://apps.admob.com) under "Apps" > "App settings".
 
-> ✅ **Tip:** Make sure the app includes the correct App ID and Ad Unit IDs in the SDK initialization code.
+> **Tip:** Make sure the app includes the correct App ID and Ad Unit IDs in the SDK initialization code.
 
 ---
 
-#### 🔵 For Unpublished Apps
+#### For Unpublished Apps
 
 If your app is **not yet published**, you must trigger validation manually:
 
@@ -91,16 +91,16 @@ If your app is **not yet published**, you must trigger validation manually:
    - In the [AdMob Console](https://apps.admob.com), check your app status under "Apps".
    - If validation is successful, you'll see a message like **"SDK detected"**.
 
-> 💡 **Important:** Use **test ads** during validation to avoid any policy violations.
+> **Important:** Use **test ads** during validation to avoid any policy violations.
 
 
 ---
 
-### 🧾 Configuring `app-ads.txt` for Authorized Sellers
+### Configuring `app-ads.txt` for Authorized Sellers
 
 To prevent unauthorized ad inventory sales and improve ad revenue, configure the `app-ads.txt` file.
 
-#### ✅ Step-by-Step Instructions
+#### Step-by-Step Instructions
 
 1. **Generate Your File:**
    - Go to [AdMob Console > Apps > App Settings](https://apps.admob.com)
@@ -118,9 +118,9 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
 
 ---
 
-### 🔗 Linking Your Website in App Stores
+### Linking Your Website in App Stores
 
-#### 🟩 Google Play Console
+#### Google Play Console
 
 1. Go to **Google Play Console > All apps > Your App > Store Presence > Store Settings**
 2. In **"Developer Website"**, add the full domain:
@@ -130,7 +130,7 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
    ```
 3. Save and publish the changes.
 
-#### 🍎 Apple App Store Connect
+#### Apple App Store Connect
 
 1. Go to **App Store Connect > Your App > App Information**
 2. In **Marketing URL**, enter:
@@ -142,7 +142,7 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
 
 ---
 
-### ✅ Validate Your `app-ads.txt` File
+### Validate Your `app-ads.txt` File
 
 After publishing:
 
@@ -152,7 +152,7 @@ After publishing:
 - The file is accessible: `https://yourdomain.com/app-ads.txt`
 - The domain matches the one in Play Store / App Store
 
-> 📝 **Note:** Validation can take up to 24–48 hours to reflect in the console.
+> **Note:** Validation can take up to 24–48 hours to reflect in the console.
 
 ---
 
