@@ -2,13 +2,13 @@
 sidebar_position: 1
 title: IAP (In App Purchase)
 description: A guide to setting up In-App Purchases for App Store and Play Console
+pagination_next: null
+pagination_prev: null
 tags:
   - IAP
   - In-App Purchase
   - Play Console
   - App Store
-hide_title: true
-hide_table_of_contents: true
 ---
 
 # IAP (In App Purchase)

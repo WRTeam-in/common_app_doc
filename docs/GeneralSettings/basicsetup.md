@@ -1,8 +1,9 @@
 ---
 sidebar_position: 4
+pagination_next: null
+pagination_prev: null
 title: Flutter & Java JDK Setup
-hide_title: true
-hide_table_of_contents: true
+
 ---
 
 # Flutter & Java JDK Setup

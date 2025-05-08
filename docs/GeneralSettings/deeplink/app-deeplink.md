@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: Deep Link Setup In Flutter Code
+pagination_next: null
+pagination_prev: null
 ---
 
 # Deep Link Setup In Flutter Code

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+pagination_next: null
+pagination_prev: null
 ---
 
 # Setting Up Google AdMob in Your App
@@ -51,11 +53,14 @@ Once your account is set up, you need to register your application with AdMob.
 ![iOS App Setup Process](/img/googleads/googleads2.gif)
 
 
-## 2.1 App Validation
+## 2.1 App Validation & app-ads.txt Setup
 
-App validation ensures that the AdMob SDK is correctly initialized in your app. The validation process differs depending on whether your app is **published** or **unpublished**.
+Proper validation and `app-ads.txt` configuration ensure your app is authorized to serve ads and earn revenue.
 
-### 🔹 For Published Apps
+
+### 🔹 App Validation
+
+#### 🟢 For Published Apps
 
 If your app is already live on the **Google Play Store** or **Apple App Store**:
 
@@ -67,7 +72,7 @@ If your app is already live on the **Google Play Store** or **Apple App Store**:
 
 ---
 
-### 🔹 For Unpublished Apps
+#### 🔵 For Unpublished Apps
 
 If your app is **not yet published**, you must trigger validation manually:
 
@@ -88,6 +93,68 @@ If your app is **not yet published**, you must trigger validation manually:
 
 > 💡 **Important:** Use **test ads** during validation to avoid any policy violations.
 
+
+---
+
+### 🧾 Configuring `app-ads.txt` for Authorized Sellers
+
+To prevent unauthorized ad inventory sales and improve ad revenue, configure the `app-ads.txt` file.
+
+#### ✅ Step-by-Step Instructions
+
+1. **Generate Your File:**
+   - Go to [AdMob Console > Apps > App Settings](https://apps.admob.com)
+   - Click **"Download app-ads.txt"**
+   - It will look something like:
+     ```
+     google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+     ```
+
+2. **Host the File on Your Website:**
+   - Upload the `app-ads.txt` file to the **root directory** of your developer website (e.g.):
+     ```
+     https://yourdomain.com/app-ads.txt
+     ```
+
+---
+
+### 🔗 Linking Your Website in App Stores
+
+#### 🟩 Google Play Console
+
+1. Go to **Google Play Console > All apps > Your App > Store Presence > Store Settings**
+2. In **"Developer Website"**, add the full domain:
+
+   ```
+   https://yourdomain.com
+   ```
+3. Save and publish the changes.
+
+#### 🍎 Apple App Store Connect
+
+1. Go to **App Store Connect > Your App > App Information**
+2. In **Marketing URL**, enter:
+
+   ```
+   https://yourdomain.com
+   ```
+3. Save and submit for review.
+
+---
+
+### ✅ Validate Your `app-ads.txt` File
+
+After publishing:
+
+- Go back to AdMob Console > **"App settings"**
+- Under **"App-ads.txt status"**, ensure it shows as **"Authorized"**
+- If not, double-check:
+- The file is accessible: `https://yourdomain.com/app-ads.txt`
+- The domain matches the one in Play Store / App Store
+
+> 📝 **Note:** Validation can take up to 24–48 hours to reflect in the console.
+
+---
 
 
 ## 3. Finding Your App IDs

@@ -1,8 +1,8 @@
 ---
 sidebar_position: 10
+pagination_next: null
+pagination_prev: null
 title: App Icon Setup
-hide_title: true
-hide_table_of_contents: true
 ---
 
 # App Icon Setup

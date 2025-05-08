@@ -1,8 +1,8 @@
 ---
 sidebar_position: 5
-hide_title: true
-hide_table_of_contents: true
 title: Firebase Setup  
+pagination_next: null
+pagination_prev: null
 ---
 
 # Firebase Setup  

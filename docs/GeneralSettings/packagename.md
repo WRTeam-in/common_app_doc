@@ -1,8 +1,8 @@
 ---
 sidebar_position: 9
 title: Package Name Addition
-hide_title: true
-hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 
 # Package Name Addition

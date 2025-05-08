@@ -1,8 +1,6 @@
 ---
 sidebar_position: 7
 title: Notifications
-hide_title: true
-hide_table_of_contents: true
 ---
 
 # Notifications

@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 title: General Settings Overview
-hide_title: true
-hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 
 # General Settings
