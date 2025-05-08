@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Setting Up Google AdMob in Your App | General Doc</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Setting Up Google AdMob in Your App | General Doc"><meta data-rh="true" name="description" content="This documentation provides a comprehensive guide on how to integrate Google AdMob into your mobile application. Follow these step-by-step instructions to set up your Google Ads account, register your app with AdMob, and implement various ad formats."><meta data-rh="true" property="og:description" content="This documentation provides a comprehensive guide on how to integrate Google AdMob into your mobile application. Follow these step-by-step instructions to set up your Google Ads account, register your app with AdMob, and implement various ad formats."><link data-rh="true" rel="icon" href="/common_app_doc/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob"><link data-rh="true" rel="alternate" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob" hreflang="en"><link data-rh="true" rel="alternate" href="https://wrteam-in.github.io/common_app_doc/GeneralSettings/advertisement/google-admob" hreflang="x-default"><link rel="stylesheet" href="/common_app_doc/assets/css/styles.cd84669c.css">
-<script src="/common_app_doc/assets/js/runtime~main.219bc3c3.js" defer="defer"></script>
+<script src="/common_app_doc/assets/js/runtime~main.31ba4dfb.js" defer="defer"></script>
 <script src="/common_app_doc/assets/js/main.a9f978d4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -56,6 +56,120 @@
 <li>Click &quot;ADD APP&quot; to register your iOS application</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="iOS App Setup Process" src="/common_app_doc/assets/images/googleads2-f5455e94b752b191342805671b18c5e3.gif" width="800" height="376" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="21-app-validation--app-adstxt-setup">2.1 App Validation &amp; app-ads.txt Setup<a href="#21-app-validation--app-adstxt-setup" class="hash-link" aria-label="Direct link to 2.1 App Validation &amp; app-ads.txt Setup" title="Direct link to 2.1 App Validation &amp; app-ads.txt Setup">​</a></h2>
+<p>Proper validation and <code>app-ads.txt</code> configuration ensure your app is authorized to serve ads and earn revenue.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-app-validation">🔹 App Validation<a href="#-app-validation" class="hash-link" aria-label="Direct link to 🔹 App Validation" title="Direct link to 🔹 App Validation">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-for-published-apps">🟢 For Published Apps<a href="#-for-published-apps" class="hash-link" aria-label="Direct link to 🟢 For Published Apps" title="Direct link to 🟢 For Published Apps">​</a></h4>
+<p>If your app is already live on the <strong>Google Play Store</strong> or <strong>Apple App Store</strong>:</p>
+<ul>
+<li>AdMob will <strong>automatically validate your app</strong> once the SDK is integrated and users start using the app.</li>
+<li>No manual steps are needed.</li>
+<li>You can monitor the validation status in the <a href="https://apps.admob.com" target="_blank" rel="noopener noreferrer">AdMob Console</a> under &quot;Apps&quot; &gt; &quot;App settings&quot;.</li>
+</ul>
+<blockquote>
+<p>✅ <strong>Tip:</strong> Make sure the app includes the correct App ID and Ad Unit IDs in the SDK initialization code.</p>
+</blockquote>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-for-unpublished-apps">🔵 For Unpublished Apps<a href="#-for-unpublished-apps" class="hash-link" aria-label="Direct link to 🔵 For Unpublished Apps" title="Direct link to 🔵 For Unpublished Apps">​</a></h4>
+<p>If your app is <strong>not yet published</strong>, you must trigger validation manually:</p>
+<ol>
+<li>
+<p><strong>Complete SDK Integration:</strong></p>
+<ul>
+<li>Follow the integration steps for Android (using <code>AndroidManifest.xml</code>) or iOS (using <code>Info.plist</code>) as shown in Section 4.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use a Real Device:</strong></p>
+<ul>
+<li>Install your app (debug or release) on a real physical device (not an emulator).</li>
+<li>Launch the app and keep it open for a few seconds.</li>
+</ul>
+</li>
+<li>
+<p><strong>Wait for Validation:</strong></p>
+<ul>
+<li>Google will detect that your app has initialized the AdMob SDK.</li>
+<li>App status in the AdMob dashboard should change from <strong>&quot;Not yet validated&quot;</strong> to <strong>&quot;Ready to serve ads&quot;</strong> within a few hours.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verify in Console:</strong></p>
+<ul>
+<li>In the <a href="https://apps.admob.com" target="_blank" rel="noopener noreferrer">AdMob Console</a>, check your app status under &quot;Apps&quot;.</li>
+<li>If validation is successful, you&#x27;ll see a message like <strong>&quot;SDK detected&quot;</strong>.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Important:</strong> Use <strong>test ads</strong> during validation to avoid any policy violations.</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-configuring-app-adstxt-for-authorized-sellers">🧾 Configuring <code>app-ads.txt</code> for Authorized Sellers<a href="#-configuring-app-adstxt-for-authorized-sellers" class="hash-link" aria-label="Direct link to -configuring-app-adstxt-for-authorized-sellers" title="Direct link to -configuring-app-adstxt-for-authorized-sellers">​</a></h3>
+<p>To prevent unauthorized ad inventory sales and improve ad revenue, configure the <code>app-ads.txt</code> file.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-step-by-step-instructions">✅ Step-by-Step Instructions<a href="#-step-by-step-instructions" class="hash-link" aria-label="Direct link to ✅ Step-by-Step Instructions" title="Direct link to ✅ Step-by-Step Instructions">​</a></h4>
+<ol>
+<li>
+<p><strong>Generate Your File:</strong></p>
+<ul>
+<li>Go to <a href="https://apps.admob.com" target="_blank" rel="noopener noreferrer">AdMob Console &gt; Apps &gt; App Settings</a></li>
+<li>Click <strong>&quot;Download app-ads.txt&quot;</strong></li>
+<li>It will look something like:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Host the File on Your Website:</strong></p>
+<ul>
+<li>Upload the <code>app-ads.txt</code> file to the <strong>root directory</strong> of your developer website (e.g.):<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">https://yourdomain.com/app-ads.txt</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-linking-your-website-in-app-stores">🔗 Linking Your Website in App Stores<a href="#-linking-your-website-in-app-stores" class="hash-link" aria-label="Direct link to 🔗 Linking Your Website in App Stores" title="Direct link to 🔗 Linking Your Website in App Stores">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-google-play-console">🟩 Google Play Console<a href="#-google-play-console" class="hash-link" aria-label="Direct link to 🟩 Google Play Console" title="Direct link to 🟩 Google Play Console">​</a></h4>
+<ol>
+<li>
+<p>Go to <strong>Google Play Console &gt; All apps &gt; Your App &gt; Store Presence &gt; Store Settings</strong></p>
+</li>
+<li>
+<p>In <strong>&quot;Developer Website&quot;</strong>, add the full domain:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">https://yourdomain.com</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Save and publish the changes.</p>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-apple-app-store-connect">🍎 Apple App Store Connect<a href="#-apple-app-store-connect" class="hash-link" aria-label="Direct link to 🍎 Apple App Store Connect" title="Direct link to 🍎 Apple App Store Connect">​</a></h4>
+<ol>
+<li>
+<p>Go to <strong>App Store Connect &gt; Your App &gt; App Information</strong></p>
+</li>
+<li>
+<p>In <strong>Marketing URL</strong>, enter:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">https://yourdomain.com</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Save and submit for review.</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-validate-your-app-adstxt-file">✅ Validate Your <code>app-ads.txt</code> File<a href="#-validate-your-app-adstxt-file" class="hash-link" aria-label="Direct link to -validate-your-app-adstxt-file" title="Direct link to -validate-your-app-adstxt-file">​</a></h3>
+<p>After publishing:</p>
+<ul>
+<li>Go back to AdMob Console &gt; <strong>&quot;App settings&quot;</strong></li>
+<li>Under <strong>&quot;App-ads.txt status&quot;</strong>, ensure it shows as <strong>&quot;Authorized&quot;</strong></li>
+<li>If not, double-check:</li>
+<li>The file is accessible: <code>https://yourdomain.com/app-ads.txt</code></li>
+<li>The domain matches the one in Play Store / App Store</li>
+</ul>
+<blockquote>
+<p>📝 <strong>Note:</strong> Validation can take up to 24–48 hours to reflect in the console.</p>
+</blockquote>
+<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-finding-your-app-ids">3. Finding Your App IDs<a href="#3-finding-your-app-ids" class="hash-link" aria-label="Direct link to 3. Finding Your App IDs" title="Direct link to 3. Finding Your App IDs">​</a></h2>
 <p>After registering your apps, you need to obtain the App IDs for both platforms.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="android-app-id">Android App ID<a href="#android-app-id" class="hash-link" aria-label="Direct link to Android App ID" title="Direct link to Android App ID">​</a></h3>
@@ -210,6 +324,6 @@
 <li>Ensure your device has an active internet connection</li>
 <li>Make sure you&#x27;re not using an ad blocker</li>
 </ol>
-<p>📚 For more detailed information, refer to the <a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">Official AdMob Documentation</a>.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-creating-a-google-ads-account" class="table-of-contents__link toc-highlight">1. Creating a Google Ads Account</a></li><li><a href="#2-adding-your-app-to-google-admob" class="table-of-contents__link toc-highlight">2. Adding Your App to Google AdMob</a><ul><li><a href="#for-android-app" class="table-of-contents__link toc-highlight">For Android App:</a></li><li><a href="#for-ios-app" class="table-of-contents__link toc-highlight">For iOS App:</a></li></ul></li><li><a href="#3-finding-your-app-ids" class="table-of-contents__link toc-highlight">3. Finding Your App IDs</a><ul><li><a href="#android-app-id" class="table-of-contents__link toc-highlight">Android App ID</a></li><li><a href="#ios-app-id" class="table-of-contents__link toc-highlight">iOS App ID</a></li></ul></li><li><a href="#4-implementing-admob-in-your-app" class="table-of-contents__link toc-highlight">4. Implementing AdMob in Your App</a><ul><li><a href="#for-android-integration" class="table-of-contents__link toc-highlight">For Android Integration:</a></li><li><a href="#for-ios-integration" class="table-of-contents__link toc-highlight">For iOS Integration:</a></li></ul></li><li><a href="#5-creating-ad-unit-ids" class="table-of-contents__link toc-highlight">5. Creating Ad Unit IDs</a><ul><li><a href="#banner-ad-unit-id" class="table-of-contents__link toc-highlight">Banner Ad Unit ID</a></li><li><a href="#interstitial-ad-unit-id" class="table-of-contents__link toc-highlight">Interstitial Ad Unit ID</a></li><li><a href="#rewarded-ad-unit-id" class="table-of-contents__link toc-highlight">Rewarded Ad Unit ID</a></li><li><a href="#native-ad-unit-id" class="table-of-contents__link toc-highlight">Native Ad Unit ID</a></li></ul></li><li><a href="#6-configuring-ad-units-in-your-apps-admin-panel" class="table-of-contents__link toc-highlight">6. Configuring Ad Units in Your App&#39;s Admin Panel</a></li><li><a href="#7-troubleshooting-common-issues" class="table-of-contents__link toc-highlight">7. Troubleshooting Common Issues</a><ul><li><a href="#no-ads-appearing" class="table-of-contents__link toc-highlight">No Ads Appearing</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2025 WRTeam.</div></div></div></footer></div>
+<p>📚 For more detailed information, refer to the <a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">Official AdMob Documentation</a>.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-creating-a-google-ads-account" class="table-of-contents__link toc-highlight">1. Creating a Google Ads Account</a></li><li><a href="#2-adding-your-app-to-google-admob" class="table-of-contents__link toc-highlight">2. Adding Your App to Google AdMob</a><ul><li><a href="#for-android-app" class="table-of-contents__link toc-highlight">For Android App:</a></li><li><a href="#for-ios-app" class="table-of-contents__link toc-highlight">For iOS App:</a></li></ul></li><li><a href="#21-app-validation--app-adstxt-setup" class="table-of-contents__link toc-highlight">2.1 App Validation &amp; app-ads.txt Setup</a><ul><li><a href="#-app-validation" class="table-of-contents__link toc-highlight">🔹 App Validation</a></li><li><a href="#-configuring-app-adstxt-for-authorized-sellers" class="table-of-contents__link toc-highlight">🧾 Configuring <code>app-ads.txt</code> for Authorized Sellers</a></li><li><a href="#-linking-your-website-in-app-stores" class="table-of-contents__link toc-highlight">🔗 Linking Your Website in App Stores</a></li><li><a href="#-validate-your-app-adstxt-file" class="table-of-contents__link toc-highlight">✅ Validate Your <code>app-ads.txt</code> File</a></li></ul></li><li><a href="#3-finding-your-app-ids" class="table-of-contents__link toc-highlight">3. Finding Your App IDs</a><ul><li><a href="#android-app-id" class="table-of-contents__link toc-highlight">Android App ID</a></li><li><a href="#ios-app-id" class="table-of-contents__link toc-highlight">iOS App ID</a></li></ul></li><li><a href="#4-implementing-admob-in-your-app" class="table-of-contents__link toc-highlight">4. Implementing AdMob in Your App</a><ul><li><a href="#for-android-integration" class="table-of-contents__link toc-highlight">For Android Integration:</a></li><li><a href="#for-ios-integration" class="table-of-contents__link toc-highlight">For iOS Integration:</a></li></ul></li><li><a href="#5-creating-ad-unit-ids" class="table-of-contents__link toc-highlight">5. Creating Ad Unit IDs</a><ul><li><a href="#banner-ad-unit-id" class="table-of-contents__link toc-highlight">Banner Ad Unit ID</a></li><li><a href="#interstitial-ad-unit-id" class="table-of-contents__link toc-highlight">Interstitial Ad Unit ID</a></li><li><a href="#rewarded-ad-unit-id" class="table-of-contents__link toc-highlight">Rewarded Ad Unit ID</a></li><li><a href="#native-ad-unit-id" class="table-of-contents__link toc-highlight">Native Ad Unit ID</a></li></ul></li><li><a href="#6-configuring-ad-units-in-your-apps-admin-panel" class="table-of-contents__link toc-highlight">6. Configuring Ad Units in Your App&#39;s Admin Panel</a></li><li><a href="#7-troubleshooting-common-issues" class="table-of-contents__link toc-highlight">7. Troubleshooting Common Issues</a><ul><li><a href="#no-ads-appearing" class="table-of-contents__link toc-highlight">No Ads Appearing</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2025 WRTeam.</div></div></div></footer></div>
 </body>
 </html>
