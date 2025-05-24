@@ -75,4 +75,4 @@ To enable test ads for a specific device:
 
 ![Testing on Specific Device](../../../static/img/advertisement/Unityads11.png)
 
-**Remember to turn off test mode before deploying your app.** 
+**Remember to turn off test mode before deploying your app.**

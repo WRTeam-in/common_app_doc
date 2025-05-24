@@ -14,12 +14,15 @@ This section covers all the general settings you need to configure for your appl
 
 - [Basic Setup](./GeneralSettings/basicsetup.md) - Essential configuration to get started
 - [Firebase Configuration](./GeneralSettings/firebase.md) - Setting up Firebase services
-- [Firebase Billing](./firebase-billing.md) - Enable billing for Fireabse OTP and Maps
+- [Firebase Billing](./GeneralSettings/firebase-billing.md) - Enable billing for Firebase OTP and Maps
 - [Notifications](./GeneralSettings/notifications.md) - Configure push notifications
 - [App Icon](./GeneralSettings/appicon.md) - Customize your application icon
 - [Package Name](./GeneralSettings/packagename.md) - Configure your application package name
 - [In-App Purchases](./GeneralSettings/iap.md) - Set up in-app purchases
 - [Assets](./GeneralSettings/assets.md) - Manage application assets
+- [App Deployment](./GeneralSettings/deployment/index.md) - App Deployment
+- [Deeplink](./GeneralSettings/deeplink/index.md) - App Deeplink
+- [Advertisement](./GeneralSettings/advertisement/index.md) - Advertisement
 
 ## Before You Begin
 
