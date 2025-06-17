@@ -12,10 +12,12 @@ Setting up deep links ensures seamless navigation between your web, mobile, and 
 ---
 
 ## 1️⃣ Add Domain 🌐
+
 - Choose the appropriate domain based on your usage:
   - If using a **web domain**, add the web domain. (If you want to use web for redirect)
   - If using a **panel domain**, add the panel domain.
 - Update the necessary files:
+
   - `lib/utils/constant.dart`
 
     ![deeplink](../../../static/img/deeplink/deeplink1.webp)
@@ -29,7 +31,9 @@ Setting up deep links ensures seamless navigation between your web, mobile, and 
 ---
 
 ## 2️⃣ Configure Deep Link Scheme 🔗
+
 - Modify the required files:
+
   - `android/app/src/main/AndroidManifest.xml`
 
     ![deeplink](../../../static/img/deeplink/deeplink2.webp)
@@ -39,6 +43,5 @@ Setting up deep links ensures seamless navigation between your web, mobile, and 
     ![deeplink](../../../static/img/deeplink/deeplink3.webp)
 
 :::note
-    Please add your scheme here using a single word in lowercase (e.g., edemand), 
+Please add your scheme here using a single word in lowercase (e.g., edemand),
 :::
-

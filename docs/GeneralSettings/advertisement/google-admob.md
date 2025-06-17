@@ -21,7 +21,6 @@ Before you can use AdMob in your application, you need to create a Google Ads ac
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nIBvbUTSJa8?si=M01V_kFb9BBjWqPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
 ## 2. Adding Your App to Google AdMob
 
 Once your account is set up, you need to register your application with AdMob.
@@ -52,11 +51,9 @@ Once your account is set up, you need to register your application with AdMob.
 
 ![iOS App Setup Process](/img/googleads/googleads2.gif)
 
-
 ## 2.1 App Validation & app-ads.txt Setup
 
 Proper validation and `app-ads.txt` configuration ensure your app is authorized to serve ads and earn revenue.
-
 
 ### App Validation
 
@@ -77,13 +74,16 @@ If your app is already live on the **Google Play Store** or **Apple App Store**:
 If your app is **not yet published**, you must trigger validation manually:
 
 1. **Complete SDK Integration:**
+
    - Follow the integration steps for Android (using `AndroidManifest.xml`) or iOS (using `Info.plist`) as shown in Section 4.
 
 2. **Use a Real Device:**
+
    - Install your app (debug or release) on a real physical device (not an emulator).
    - Launch the app and keep it open for a few seconds.
 
 3. **Wait for Validation:**
+
    - Google will detect that your app has initialized the AdMob SDK.
    - App status in the AdMob dashboard should change from **"Not yet validated"** to **"Ready to serve ads"** within a few hours.
 
@@ -92,7 +92,6 @@ If your app is **not yet published**, you must trigger validation manually:
    - If validation is successful, you'll see a message like **"SDK detected"**.
 
 > **Important:** Use **test ads** during validation to avoid any policy violations.
-
 
 ---
 
@@ -103,6 +102,7 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
 #### Step-by-Step Instructions
 
 1. **Generate Your File:**
+
    - Go to [AdMob Console > Apps > App Settings](https://apps.admob.com)
    - Click **"Download app-ads.txt"**
    - It will look something like:
@@ -128,6 +128,7 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
    ```
    https://yourdomain.com
    ```
+
 3. Save and publish the changes.
 
 #### Apple App Store Connect
@@ -138,6 +139,7 @@ To prevent unauthorized ad inventory sales and improve ad revenue, configure the
    ```
    https://yourdomain.com
    ```
+
 3. Save and submit for review.
 
 ---
@@ -155,7 +157,6 @@ After publishing:
 > **Note:** Validation can take up to 24–48 hours to reflect in the console.
 
 ---
-
 
 ## 3. Finding Your App IDs
 
@@ -231,7 +232,7 @@ Now you need to create different types of ad units for your application.
 #### iOS Banner Ad Unit ID
 
 ![Banner Ad Unit ID](/img/googleads/googleads8.gif)
-         
+
 ### Interstitial Ad Unit ID
 
 1. In the AdMob console, select your app
@@ -328,6 +329,4 @@ If ads aren't showing in your app:
 3. Ensure your device has an active internet connection
 4. Make sure you're not using an ad blocker
 
-📚 For more detailed information, refer to the [Official AdMob Documentation](https://developers.google.com/admob). 
-
-
+📚 For more detailed information, refer to the [Official AdMob Documentation](https://developers.google.com/admob).
