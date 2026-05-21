@@ -116,6 +116,10 @@ storeFile=<path to your keystore file>
 
 ![Create key.properties File](../../../static/img/appDeployment/createKeyProperties.png)
 
+:::note Android Developer Verification
+Once your signing key is generated, you'll need to register your package name and signing key with Google for developer verification. See [Android Developer Verification — Package Name Registration](./android-developer-verification.md) for the full process.
+:::
+
 Update `android/app/build.gradle`:
 
 1. Open your `build.gradle` file.
