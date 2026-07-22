@@ -53,7 +53,7 @@ Before creating IAP and offering them in your app, you must do two things:
 If you have not done this, usually App Store Connect gives you a warning like the following:
 
 <div align="center">
-  <img src="../img/iap/app_store_warning.png" alt="App Store Warning" style={{borderRadius: '8px'}} />
+  <img src="../../static/img/iap/app_store_warning.png" alt="App Store Warning" style={{borderRadius: '8px'}} />
 </div>
 
 If you see something like the above, follow the steps to accept the appropriate agreements.
