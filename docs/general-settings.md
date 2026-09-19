@@ -16,6 +16,7 @@ This section covers all the general settings you need to configure for your appl
 - [Firebase Configuration](./GeneralSettings/firebase.md) - Setting up Firebase services
 - [Firebase Billing](./GeneralSettings/firebase-billing.md) - Enable billing for Firebase OTP and Maps
 - [Notifications](./GeneralSettings/notifications.md) - Configure push notifications
+- [Facebook App Events](./GeneralSettings/facebook-app-events.md) - Set up Facebook App Events for install tracking and attribution
 - [App Icon](./GeneralSettings/appicon.md) - Customize your application icon
 - [Package Name](./GeneralSettings/packagename.md) - Configure your application package name
 - [In-App Purchases](./GeneralSettings/iap.md) - Set up in-app purchases
